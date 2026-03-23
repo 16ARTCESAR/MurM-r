@@ -46,21 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-  // Couleur des swatches → changement d'image
-  document.querySelectorAll('.model-card').forEach(card => {
-    const img   = card.querySelector('.model-img img');
-    const label = card.querySelector('.color-label');
-    card.querySelectorAll('.color-swatch[data-img]').forEach(swatch => {
-      swatch.addEventListener('click', () => {
-        img.src           = swatch.dataset.img;
-        label.textContent = swatch.dataset.label;
-        card.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('color-active'));
-        swatch.classList.add('color-active');
-      });
-    });
-  });
-
-  document.querySelectorAll(
+document.querySelectorAll(
     '.benefit-item, .step, .model-card, .faq-item'
   ).forEach(el => {
     el.classList.add('reveal');
