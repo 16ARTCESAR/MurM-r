@@ -26,6 +26,18 @@ function animateCount(el, target) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Sélection de couleur (visuel uniquement, pas de changement d'image)
+  document.querySelectorAll('.model-card').forEach(card => {
+    const label = card.querySelector('.color-label');
+    card.querySelectorAll('.color-swatch[data-color]').forEach(swatch => {
+      swatch.addEventListener('click', () => {
+        card.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('color-active'));
+        swatch.classList.add('color-active');
+        label.textContent = swatch.dataset.color;
+      });
+    });
+  });
+
   // FAQ accordion
   document.querySelectorAll('.faq-question').forEach(btn => {
     btn.addEventListener('click', () => {
