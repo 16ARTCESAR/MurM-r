@@ -3,10 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MurMûr — Acheter</title>
+  <title>MurMûr — Réservez votre place</title>
+  <meta name="description" content="MurMûr est en rupture de stock. Réservez votre place dans la liste d'attente et soyez prioritaire à la réouverture — sans paiement, sans engagement.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="MurMûr — Réservez votre place en liste d'attente">
+  <meta property="og:description" content="Stock épuisé. Laissez votre email pour être prioritaire dès la réouverture. Sans paiement, sans engagement.">
+  <meta property="og:image"       content="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/c76d33d8-d088-4fd1-be5b-008bac863631/CC3C6756-73B8-4911-8CC1-447880434E48.png">
+  <meta property="og:url"         content="https://murmur.be/acheter">
+  <meta property="og:locale"      content="fr_BE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="MurMûr — Réservez votre place en liste d'attente">
+  <meta name="twitter:description" content="Stock épuisé. Laissez votre email pour être prioritaire dès la réouverture.">
+  <meta name="twitter:image"       content="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/c76d33d8-d088-4fd1-be5b-008bac863631/CC3C6756-73B8-4911-8CC1-447880434E48.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="pictures/04ac0f89-5815-4c5e-92b9-a5c439f3a001.jpg">
   <link rel="stylesheet" href="murmur.css">
   <link rel="stylesheet" href="acheter.css">
 </head>
@@ -21,8 +38,9 @@
       <li><a href="murmur.html#comment">Fonctionnement</a></li>
       <li><a href="murmur.html#modeles">Modèles</a></li>
       <li><a href="murmur.html#faq">FAQ</a></li>
+      <li><a href="histoire.html">Notre histoire</a></li>
     </ul>
-    <a href="murmur.html" class="btn btn-outline btn-sm">← Retour</a>
+    <a href="murmur.html" class="btn btn-outline btn-sm">← Accueil</a>
   </nav>
 
   <!-- Out of stock -->
@@ -110,6 +128,11 @@
           </div>
 
           <textarea name="message" placeholder="Un commentaire ou une question ? (optionnel)" rows="3" maxlength="1000"></textarea>
+
+          <div class="waitlist-counter">
+            <span class="waitlist-dot"></span>
+            <span><strong id="waitlist-count">11</strong> personnes déjà en file d'attente</span>
+          </div>
 
           <button type="submit" class="btn btn-primary btn-full btn-lg" id="btn-reserve">
             Réserver ma place — être contacté par email

@@ -1,3 +1,29 @@
+const WL_KEY  = 'murmur_waitlist_count';
+const WL_BASE = 11;
+
+function getWaitlistCount() {
+  const stored = parseInt(localStorage.getItem(WL_KEY), 10);
+  if (!stored || stored < WL_BASE) {
+    localStorage.setItem(WL_KEY, WL_BASE);
+    return WL_BASE;
+  }
+  return stored;
+}
+
+function animateCount(el, target) {
+  const start = Math.max(1, target - 5);
+  let current = start;
+  el.textContent = current;
+  const tick = () => {
+    if (current < target) {
+      current++;
+      el.textContent = current;
+      setTimeout(tick, 90);
+    }
+  };
+  setTimeout(tick, 300);
+}
+
 const MODELS = {
   starter: {
     name: 'MurMûr Starter',
@@ -46,6 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const modelParam = VALID_KEYS.includes(rawParam) ? rawParam : 'standard';
   setModel(modelParam);
 
+  // Waitlist counter
+  const countEl = document.getElementById('waitlist-count');
+  if (countEl) animateCount(countEl, getWaitlistCount());
+
   // Selector buttons
   document.querySelectorAll('.selector-btn').forEach(btn => {
     btn.addEventListener('click', () => setModel(btn.dataset.model));
@@ -73,6 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       if (res.ok) {
         form.reset();
+        // Incrémenter le compteur de file d'attente
+        const newCount = getWaitlistCount() + 1;
+        localStorage.setItem(WL_KEY, newCount);
+        if (countEl) countEl.textContent = newCount;
         document.getElementById('confirm-overlay').classList.add('show');
       } else {
         btn.textContent = 'Erreur — réessayez';

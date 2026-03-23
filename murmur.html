@@ -4,9 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MurMûr — Potager vertical rotatif</title>
+  <meta name="description" content="Le premier potager mural rotatif conçu pour l'appartement. Installez-le en une heure, récoltez dès la semaine suivante — directement depuis votre balcon ou façade.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="MurMûr — Récoltez chez vous. Sans jardin, sans compromis.">
+  <meta property="og:description" content="Le premier potager mural rotatif conçu pour l'appartement. Installez-le en une heure, récoltez dès la semaine suivante.">
+  <meta property="og:image"       content="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/c76d33d8-d088-4fd1-be5b-008bac863631/CC3C6756-73B8-4911-8CC1-447880434E48.png">
+  <meta property="og:url"         content="https://murmur.be">
+  <meta property="og:locale"      content="fr_BE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="MurMûr — Récoltez chez vous. Sans jardin, sans compromis.">
+  <meta name="twitter:description" content="Le premier potager mural rotatif conçu pour l'appartement. Installez-le en une heure, récoltez dès la semaine suivante.">
+  <meta name="twitter:image"       content="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/c76d33d8-d088-4fd1-be5b-008bac863631/CC3C6756-73B8-4911-8CC1-447880434E48.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="pictures/04ac0f89-5815-4c5e-92b9-a5c439f3a001.jpg">
   <link rel="stylesheet" href="murmur.css">
 </head>
 <body>
@@ -20,6 +37,7 @@
       <li><a href="#comment">Fonctionnement</a></li>
       <li><a href="#modeles">Modèles</a></li>
       <li><a href="#faq">FAQ</a></li>
+      <li><a href="histoire.html">Notre histoire</a></li>
     </ul>
     <a href="acheter.html" class="btn btn-primary btn-sm">Acheter</a>
   </nav>
@@ -140,17 +158,20 @@
       <div class="model-cards">
         <div class="model-card">
           <div class="model-img">
-            <img src="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/86e8915d-5234-4e6c-8d2d-0164257caf0a/C2057623-31A8-496C-9D2B-FEC3C4EBA4BC.png" alt="MurMûr Starter">
+            <img src="pictures/2b90d117-cc61-4a89-a35d-e03b9f398924.png" alt="MurMûr Starter Noir">
           </div>
           <div class="model-body">
             <span class="model-badge">Starter</span>
             <h3>MurMûr Starter</h3>
             <p>6 bacs — Pour commencer à cultiver chez vous dès aujourd'hui, sans prise de tête.</p>
             <div class="model-colors">
-              <span class="color-swatch swatch-noir" title="Noir"></span>
-              <span class="color-swatch swatch-blanc" title="Blanc"></span>
-              <span class="color-swatch swatch-gris" title="Gris"></span>
-              <span class="color-label">Noir · Blanc · Gris</span>
+              <span class="color-swatch swatch-noir color-active" title="Noir"
+                data-img="pictures/2b90d117-cc61-4a89-a35d-e03b9f398924.png" data-label="Noir"></span>
+              <span class="color-swatch swatch-blanc" title="Blanc"
+                data-img="pictures/bb9df394-b32c-47ab-87c1-8003f329a160.png" data-label="Blanc"></span>
+              <span class="color-swatch swatch-gris" title="Gris"
+                data-img="pictures/15ad3c9f-7687-4bad-a8f8-18aa1d12ef54.png" data-label="Gris"></span>
+              <span class="color-label">Noir</span>
             </div>
             <p class="model-price">249 €</p>
             <a href="acheter.html?model=starter" class="btn btn-primary btn-full">Acheter Starter</a>
@@ -158,17 +179,20 @@
         </div>
         <div class="model-card model-featured">
           <div class="model-img">
-            <img src="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/0b062a38-324f-4e89-84af-35bf0128a1d4/70E2B5FA-E317-42F0-BB9D-864DC70AE071.png" alt="MurMûr Standard">
+            <img src="pictures/2b90d117-cc61-4a89-a35d-e03b9f398924.png" alt="MurMûr Standard Noir">
           </div>
           <div class="model-body">
             <span class="model-badge badge-featured">Le plus populaire</span>
             <h3>MurMûr Standard</h3>
             <p>9 bacs — La vraie expérience potager, sans quitter votre appartement.</p>
             <div class="model-colors">
-              <span class="color-swatch swatch-noir" title="Noir"></span>
-              <span class="color-swatch swatch-blanc" title="Blanc"></span>
-              <span class="color-swatch swatch-gris" title="Gris"></span>
-              <span class="color-label">Noir · Blanc · Gris</span>
+              <span class="color-swatch swatch-noir color-active" title="Noir"
+                data-img="pictures/2b90d117-cc61-4a89-a35d-e03b9f398924.png" data-label="Noir"></span>
+              <span class="color-swatch swatch-blanc" title="Blanc"
+                data-img="pictures/bb9df394-b32c-47ab-87c1-8003f329a160.png" data-label="Blanc"></span>
+              <span class="color-swatch swatch-gris" title="Gris"
+                data-img="pictures/15ad3c9f-7687-4bad-a8f8-18aa1d12ef54.png" data-label="Gris"></span>
+              <span class="color-label">Noir</span>
             </div>
             <p class="model-price">399 €</p>
             <a href="acheter.html?model=standard" class="btn btn-primary btn-full">Acheter Standard</a>
@@ -176,22 +200,82 @@
         </div>
         <div class="model-card">
           <div class="model-img">
-            <img src="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/30a3a9f9-6990-43a6-9b99-25c97955107a/2B83458D-D9B2-400A-A91A-4F7DCDA638EA.png" alt="MurMûr Façade">
+            <img src="pictures/1f692a55-c8a6-46cc-9330-140545da84c5.png" alt="MurMûr Façade Noir">
           </div>
           <div class="model-body">
             <span class="model-badge">Façade</span>
             <h3>MurMûr Façade</h3>
             <p>12 bacs — Transformez votre façade entière en jardin productif et spectaculaire.</p>
             <div class="model-colors">
-              <span class="color-swatch swatch-noir" title="Noir"></span>
-              <span class="color-swatch swatch-blanc" title="Blanc"></span>
-              <span class="color-swatch swatch-gris" title="Gris"></span>
-              <span class="color-label">Noir · Blanc · Gris</span>
+              <span class="color-swatch swatch-noir color-active" title="Noir"
+                data-img="pictures/1f692a55-c8a6-46cc-9330-140545da84c5.png" data-label="Noir"></span>
+              <span class="color-swatch swatch-blanc" title="Blanc"
+                data-img="pictures/bb9df394-b32c-47ab-87c1-8003f329a160.png" data-label="Blanc"></span>
+              <span class="color-swatch swatch-gris" title="Gris"
+                data-img="pictures/15ad3c9f-7687-4bad-a8f8-18aa1d12ef54.png" data-label="Gris"></span>
+              <span class="color-label">Noir</span>
             </div>
             <p class="model-price">699 €</p>
             <a href="acheter.html?model=facade" class="btn btn-primary btn-full">Acheter Façade</a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avis clients -->
+  <section class="reviews">
+    <div class="container">
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Installé en 45 minutes chrono. Le mécanisme rotatif est bluffant — mes tomates cerises sont déjà en fleurs après 3 semaines."</p>
+          <div class="review-author">
+            <div class="review-avatar">S</div>
+            <div>
+              <div class="review-name">Sophie M.</div>
+              <div class="review-location">Bruxelles</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Enfin un potager qui ne ressemble pas à un potager. Sur mon balcon, il fait l'effet d'une sculpture. Les voisins m'ont tous demandé où je l'avais trouvé."</p>
+          <div class="review-author">
+            <div class="review-avatar">L</div>
+            <div>
+              <div class="review-name">Lucas D.</div>
+              <div class="review-location">Waterloo</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"J'avais essayé deux autres systèmes de potager mural. MurMûr est dans une autre catégorie — la rotation change vraiment tout pour l'accès aux plantes."</p>
+          <div class="review-author">
+            <div class="review-avatar">A</div>
+            <div>
+              <div class="review-name">Amélie R.</div>
+              <div class="review-location">Nivelles</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Le modèle blanc dans notre cuisine d'été est parfait. Basilic, persil, menthe — on ne rachète plus d'herbes depuis 2 mois. Rentabilisé en un été."</p>
+          <div class="review-author">
+            <div class="review-avatar">T</div>
+            <div>
+              <div class="review-name">Thomas & Claire</div>
+              <div class="review-location">Bruxelles</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
