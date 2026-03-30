@@ -842,41 +842,21 @@ ul  { list-style: none; }
   .container { padding: 0 1.25rem; }
 }
 
-/* === GOOGLE TRANSLATE === */
-/* Masque la barre Google en haut de page */
-.goog-te-banner-frame { display: none !important; }
-body { top: 0 !important; }
-
-#google_translate_element .goog-te-gadget {
-  font-family: var(--font-body) !important;
-  font-size: 0 !important;
-}
-
-#google_translate_element select {
+/* === LANG TOGGLE === */
+.lang-toggle {
   font-family: var(--font-body);
-  font-size: 0.875rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   color: var(--text-muted);
   background: transparent;
   border: 1px solid var(--border);
   border-radius: 100px;
-  padding: 0.5rem 1rem;
+  padding: 0.45rem 0.9rem;
   cursor: pointer;
-  outline: none;
   transition: border-color 0.2s, color 0.2s;
-  appearance: none;
-  -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7470' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  padding-right: 2rem;
 }
-
-#google_translate_element select:hover {
+.lang-toggle:hover {
   border-color: var(--green);
-  color: var(--text);
-}
-
-#google_translate_element .goog-te-gadget-simple {
-  border: none !important;
-  background: transparent !important;
+  color: var(--green);
 }

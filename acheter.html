@@ -44,23 +44,23 @@
       <img src="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/b6ee5876-8ae8-41de-8cf2-f3beba4ea158/IMG_3227.png?format=300w" alt="MurMûr">
     </a>
     <ul class="nav-links">
-      <li><a href="index.html#comment">Fonctionnement</a></li>
-      <li><a href="index.html#modeles">Modèles</a></li>
-      <li><a href="index.html#faq">FAQ</a></li>
-      <li><a href="histoire.html">Notre histoire</a></li>
+      <li><a href="index.html#comment"  data-i18n="nav-how">Fonctionnement</a></li>
+      <li><a href="index.html#modeles"  data-i18n="nav-models">Modèles</a></li>
+      <li><a href="index.html#faq"      data-i18n="nav-faq">FAQ</a></li>
+      <li><a href="histoire.html"       data-i18n="nav-story">Notre histoire</a></li>
     </ul>
-    <div id="google_translate_element"></div>
-    <a href="index.html" class="btn btn-outline btn-sm">← Accueil</a>
+    <button class="lang-toggle" id="lang-toggle" onclick="toggleLang()">EN</button>
+    <a href="index.html" class="btn btn-outline btn-sm" data-i18n="nav-back">← Accueil</a>
   </nav>
 
   <!-- Out of stock -->
   <section class="oos-hero">
     <div class="oos-badge">
       <span class="oos-dot"></span>
-      Rupture de stock
+      <span data-i18n="oos-badge">Rupture de stock</span>
     </div>
-    <h1>Ce modèle est actuellement<br><em>en rupture de stock.</em></h1>
-    <p class="oos-sub">MurMûr connaît un succès que nous n'avions pas prévu — notre premier stock est épuisé. La bonne nouvelle : une nouvelle production est en cours. Réservez votre place dès maintenant pour être prioritaire à la réouverture.</p>
+    <h1 data-i18n="oos-h1">Ce modèle est actuellement<br><em>en rupture de stock.</em></h1>
+    <p class="oos-sub" data-i18n="oos-sub">MurMûr connaît un succès que nous n'avions pas prévu — notre premier stock est épuisé. La bonne nouvelle : une nouvelle production est en cours. Réservez votre place dès maintenant pour être prioritaire à la réouverture.</p>
   </section>
 
   <!-- Modèle sélectionné -->
@@ -70,28 +70,28 @@
         <div class="oos-model-img" id="selected-model-img">
           <img src="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/0b062a38-324f-4e89-84af-35bf0128a1d4/70E2B5FA-E317-42F0-BB9D-864DC70AE071.png" alt="MurMûr" id="model-img">
           <div class="oos-overlay">
-            <span>Rupture de stock</span>
+            <span data-i18n="oos-overlay">Rupture de stock</span>
           </div>
         </div>
         <div class="oos-model-info">
-          <span class="oos-label">Modèle sélectionné</span>
+          <span class="oos-label" data-i18n="model-label">Modèle sélectionné</span>
           <h2 id="model-name">MurMûr Standard</h2>
           <p id="model-desc">9 bacs — La vraie expérience potager, sans quitter votre appartement.</p>
           <p class="model-price" id="model-price">399 €</p>
-          <p class="oos-notice">⏳ Stock épuisé — prochain arrivage en cours de production.</p>
+          <p class="oos-notice" data-i18n="model-notice">⏳ Stock épuisé — prochain arrivage en cours de production.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sélecteur de modèle si pas de param -->
+  <!-- Sélecteur de modèle -->
   <section class="model-selector" id="model-selector">
     <div class="container">
-      <p class="selector-label">Changer de modèle :</p>
+      <p class="selector-label" data-i18n="sel-label">Changer de modèle :</p>
       <div class="selector-btns">
-        <button class="selector-btn" data-model="starter">Starter — 249 €</button>
-        <button class="selector-btn active" data-model="standard">Standard — 399 €</button>
-        <button class="selector-btn" data-model="facade">Façade — 699 €</button>
+        <button class="selector-btn"        data-model="starter"  data-i18n="sel-starter">Starter — 249 €</button>
+        <button class="selector-btn active" data-model="standard" data-i18n="sel-standard">Standard — 399 €</button>
+        <button class="selector-btn"        data-model="facade"   data-i18n="sel-facade">Façade — 699 €</button>
       </div>
     </div>
   </section>
@@ -100,35 +100,31 @@
   <section class="reserve-section">
     <div class="container">
       <div class="reserve-inner">
-
         <div class="reserve-text">
-          <h2>Réservez votre place.</h2>
-          <p>Laissez-nous votre email et nous vous prévenons en priorité dès que le stock est disponible. Aucun paiement maintenant — juste votre place dans la liste.</p>
+          <h2 data-i18n="res-title">Réservez votre place.</h2>
+          <p  data-i18n="res-sub">Laissez-nous votre email et nous vous prévenons en priorité dès que le stock est disponible. Aucun paiement maintenant — juste votre place dans la liste.</p>
           <ul class="reserve-perks">
-            <li>✓ Priorité à la réouverture</li>
-            <li>✓ Prix de lancement garanti</li>
-            <li>✓ Zéro engagement, annulation libre</li>
-            <li>✓ Notification par email dès la mise en vente</li>
+            <li data-i18n="perk1">✓ Priorité à la réouverture</li>
+            <li data-i18n="perk2">✓ Prix de lancement garanti</li>
+            <li data-i18n="perk3">✓ Zéro engagement, annulation libre</li>
+            <li data-i18n="perk4">✓ Notification par email dès la mise en vente</li>
           </ul>
         </div>
 
         <form class="reserve-form" id="reserve-form">
-          <h3>Être notifié(e) en priorité</h3>
-
+          <h3 data-i18n="form-title">Être notifié(e) en priorité</h3>
           <div class="form-row">
-            <input type="text" name="prenom" placeholder="Prénom" required maxlength="60">
-            <input type="text" name="nom" placeholder="Nom" required maxlength="60">
+            <input type="text"  name="prenom" data-i18n-ph="ph-prenom" placeholder="Prénom"    required maxlength="60">
+            <input type="text"  name="nom"    data-i18n-ph="ph-nom"    placeholder="Nom"       required maxlength="60">
           </div>
-          <input type="email" name="email" placeholder="Votre email" required maxlength="120">
-
+          <input type="email" name="email"   data-i18n-ph="ph-email"  placeholder="Votre email" required maxlength="120">
           <input type="hidden" name="modele" id="form-modele" value="standard">
-
           <div class="form-row">
             <select name="habitation">
-              <option value="">Type d'habitation</option>
-              <option value="appartement">Appartement</option>
-              <option value="maison">Maison</option>
-              <option value="autre">Autre</option>
+              <option value=""           data-i18n="hab-label">Type d'habitation</option>
+              <option value="appartement" data-i18n="hab-appt">Appartement</option>
+              <option value="maison"      data-i18n="hab-maison">Maison</option>
+              <option value="autre"       data-i18n="hab-autre">Autre</option>
             </select>
             <select name="modele_choix" id="form-modele-select">
               <option value="starter">Starter — 249 €</option>
@@ -136,31 +132,27 @@
               <option value="facade">Façade — 699 €</option>
             </select>
           </div>
-
-          <textarea name="message" placeholder="Un commentaire ou une question ? (optionnel)" rows="3" maxlength="1000"></textarea>
-
+          <textarea name="message" data-i18n-ph="ph-message" placeholder="Un commentaire ou une question ? (optionnel)" rows="3" maxlength="1000"></textarea>
           <div class="waitlist-counter">
             <span class="waitlist-dot"></span>
-            <span><strong id="waitlist-count">11</strong> personnes déjà en file d'attente</span>
+            <span><strong id="waitlist-count">11</strong> <span data-i18n="waitlist-text">personnes déjà en file d'attente</span></span>
           </div>
-
-          <button type="submit" class="btn btn-primary btn-full btn-lg" id="btn-reserve">
+          <button type="submit" class="btn btn-primary btn-full btn-lg" id="btn-reserve" data-i18n="form-btn">
             Réserver ma place — être contacté par email
           </button>
-          <p class="form-note">Sans engagement. Sans paiement. Nous vous écrivons dès que c'est disponible.</p>
+          <p class="form-note" data-i18n="form-note">Sans engagement. Sans paiement. Nous vous écrivons dès que c'est disponible.</p>
         </form>
-
       </div>
     </div>
   </section>
 
-  <!-- Confirmation (caché initialement) -->
+  <!-- Confirmation -->
   <div class="confirm-overlay" id="confirm-overlay">
     <div class="confirm-box">
       <div class="confirm-icon">✓</div>
-      <h2>Votre place est réservée !</h2>
-      <p>Merci — vous serez parmi les premiers à être contacté(e) dès que le stock est disponible. On vous écrit à l'adresse que vous avez fournie.</p>
-      <a href="index.html" class="btn btn-primary">Retour au site</a>
+      <h2 data-i18n="confirm-title">Votre place est réservée !</h2>
+      <p  data-i18n="confirm-text">Merci — vous serez parmi les premiers à être contacté(e) dès que le stock est disponible. On vous écrit à l'adresse que vous avez fournie.</p>
+      <a href="index.html" class="btn btn-primary" data-i18n="confirm-btn">Retour au site</a>
     </div>
   </div>
 
@@ -168,14 +160,14 @@
   <footer class="footer">
     <div class="container footer-inner">
       <img src="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/b6ee5876-8ae8-41de-8cf2-f3beba4ea158/IMG_3227.png?format=300w" alt="MurMûr" class="footer-logo">
-      <p>© 2026 MurMûr. Tous droits réservés.</p>
+      <p data-i18n="footer-rights">© 2026 MurMûr. Tous droits réservés.</p>
       <p><a href="mailto:murmur.alc.co@gmail.com">murmur.alc.co@gmail.com</a></p>
     </div>
   </footer>
 
   <script src="acheter.js"></script>
+  <script src="i18n.js"></script>
   <script>
-    // Google Analytics — tracking des boutons
     document.querySelectorAll('a.btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
         gtag('event', 'click', {
@@ -185,7 +177,6 @@
         });
       });
     });
-
     document.querySelectorAll('button.selector-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
         gtag('event', 'modele_selectionne', {
@@ -194,7 +185,6 @@
         });
       });
     });
-
     var formBtn = document.getElementById('btn-reserve');
     if (formBtn) {
       formBtn.addEventListener('click', function() {
@@ -203,18 +193,6 @@
           event_label: 'Réserver ma place'
         });
       });
-    }
-  </script>
-
-  <!-- Google Translate -->
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'fr',
-        includedLanguages: 'en,nl,de,es,it',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
     }
   </script>
 </body>

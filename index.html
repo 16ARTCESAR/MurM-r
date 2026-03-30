@@ -43,24 +43,24 @@
       <img src="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/b6ee5876-8ae8-41de-8cf2-f3beba4ea158/IMG_3227.png?format=300w" alt="MurMûr">
     </a>
     <ul class="nav-links">
-      <li><a href="#comment">Fonctionnement</a></li>
-      <li><a href="#modeles">Modèles</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="histoire.html">Notre histoire</a></li>
+      <li><a href="#comment"      data-i18n="nav-how">Fonctionnement</a></li>
+      <li><a href="#modeles"      data-i18n="nav-models">Modèles</a></li>
+      <li><a href="#faq"          data-i18n="nav-faq">FAQ</a></li>
+      <li><a href="histoire.html" data-i18n="nav-story">Notre histoire</a></li>
     </ul>
-    <div id="google_translate_element"></div>
-    <a href="acheter.html" class="btn btn-primary btn-sm">Acheter</a>
+    <button class="lang-toggle" id="lang-toggle" onclick="toggleLang()">EN</button>
+    <a href="acheter.html" class="btn btn-primary btn-sm" data-i18n="nav-buy">Acheter</a>
   </nav>
 
   <!-- Hero -->
   <section class="hero" id="accueil">
     <div class="hero-text">
-      <span class="hero-tag">Potager vertical rotatif</span>
-      <h1>Récoltez chez vous.<br><em>Sans jardin,<br>sans compromis.</em></h1>
-      <p class="hero-sub">Le premier potager mural rotatif conçu pour l'appartement. Installez-le en une heure, récoltez dès le mois suivant — directement depuis votre fenêtre.</p>
+      <span class="hero-tag" data-i18n="hero-tag">Potager vertical rotatif</span>
+      <h1 data-i18n="hero-h1">Récoltez chez vous.<br><em>Sans jardin,<br>sans compromis.</em></h1>
+      <p class="hero-sub" data-i18n="hero-sub">Le premier potager mural rotatif conçu pour l'appartement. Installez-le en une heure, récoltez dès le mois suivant — directement depuis votre fenêtre.</p>
       <div class="hero-ctas">
-        <a href="acheter.html" class="btn btn-primary">Acheter mon potager</a>
-        <a href="#modeles" class="btn btn-outline">Voir les modèles</a>
+        <a href="acheter.html" class="btn btn-primary"  data-i18n="hero-cta-buy">Acheter mon potager</a>
+        <a href="#modeles"     class="btn btn-outline"  data-i18n="hero-cta-models">Voir les modèles</a>
       </div>
     </div>
     <div class="hero-visual">
@@ -71,49 +71,49 @@
   <!-- Bénéfices -->
   <section class="benefits" id="benefices">
     <div class="container">
-      <h2>Ce que MurMûr change pour vous</h2>
+      <h2 data-i18n="benefits-title">Ce que MurMûr change pour vous</h2>
       <div class="benefits-grid">
         <div class="benefit-item">
           <div class="benefit-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V5a1 1 0 011-1h12a1 1 0 011 1v16"/><path d="M9 21v-4h6v4M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg>
           </div>
-          <h3>Fait pour l'appartement</h3>
-          <p>Balcon ou façade — MurMûr s'adapte à votre espace, pas l'inverse. Zéro jardin requis.</p>
+          <h3 data-i18n="b1-title">Fait pour l'appartement</h3>
+          <p  data-i18n="b1-text">Balcon ou façade — MurMûr s'adapte à votre espace, pas l'inverse. Zéro jardin requis.</p>
         </div>
         <div class="benefit-item">
           <div class="benefit-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 109-9"/><path d="M12 3L8 7l4 4"/></svg>
           </div>
-          <h3>Zéro effort d'accès</h3>
-          <p>Chaque plante vient à vous. Le mécanisme rotatif élimine les angles morts et les contorsions.</p>
+          <h3 data-i18n="b2-title">Zéro effort d'accès</h3>
+          <p  data-i18n="b2-text">Chaque plante vient à vous. Le mécanisme rotatif élimine les angles morts et les contorsions.</p>
         </div>
         <div class="benefit-item">
           <div class="benefit-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12M12 12C12 7 17 4 20 4c0 5-3 8-8 8z"/><path d="M12 12C12 7 7 4 4 4c0 5 3 8 8 8z"/></svg>
           </div>
-          <h3>Récoltez plus, tout l'année</h3>
-          <p>Chaque plante est bien exposée, bien arrosée. Résultat : des récoltes régulières même en hiver.</p>
+          <h3 data-i18n="b3-title">Récoltez plus, tout l'année</h3>
+          <p  data-i18n="b3-text">Chaque plante est bien exposée, bien arrosée. Résultat : des récoltes régulières même en hiver.</p>
         </div>
         <div class="benefit-item">
           <div class="benefit-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
           </div>
-          <h3>Un objet dont vous serez fier(e)</h3>
-          <p>MurMûr fait tourner les têtes autant que les bacs — conçu pour embellir, pas seulement cultiver.</p>
+          <h3 data-i18n="b4-title">Un objet dont vous serez fier(e)</h3>
+          <p  data-i18n="b4-text">MurMûr fait tourner les têtes autant que les bacs — conçu pour embellir, pas seulement cultiver.</p>
         </div>
         <div class="benefit-item">
           <div class="benefit-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
           </div>
-          <h3>Installé en moins d'une heure</h3>
-          <p>Fixation intuitive, zéro outillage spécial. Du déballage à la première plante en 60 minutes.</p>
+          <h3 data-i18n="b5-title">Installé en moins d'une heure</h3>
+          <p  data-i18n="b5-text">Fixation intuitive, zéro outillage spécial. Du déballage à la première plante en 60 minutes.</p>
         </div>
         <div class="benefit-item">
           <div class="benefit-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v18M7 3C7 3 4 6 4 9h6c0-3-3-6-3-6zM17 3v4M17 11v10M15 7h4"/></svg>
           </div>
-          <h3>Cultivez ce que vous mangez</h3>
-          <p>Herbes, tomates cerises, fraises, poivrons — tout ce qui se retrouve dans votre assiette.</p>
+          <h3 data-i18n="b6-title">Cultivez ce que vous mangez</h3>
+          <p  data-i18n="b6-text">Herbes, tomates cerises, fraises, poivrons — tout ce qui se retrouve dans votre assiette.</p>
         </div>
       </div>
     </div>
@@ -124,27 +124,27 @@
     <div class="container">
       <div class="how-inner">
         <div class="how-text">
-          <h2>Simple comme bonjour.</h2>
+          <h2 data-i18n="how-title">Simple comme bonjour.</h2>
           <div class="steps">
             <div class="step">
               <span class="step-num">01</span>
               <div>
-                <h3>Fixez en une heure</h3>
-                <p>Vissez MurMûr sur votre façade ou balcon. Simple, solide, discret — aucun technicien requis.</p>
+                <h3 data-i18n="s1-title">Fixez en une heure</h3>
+                <p  data-i18n="s1-text">Vissez MurMûr sur votre façade ou balcon. Simple, solide, discret — aucun technicien requis.</p>
               </div>
             </div>
             <div class="step">
               <span class="step-num">02</span>
               <div>
-                <h3>Chaque plante vient à vous</h3>
-                <p>Faites tourner les bacs : chaque plante arrive à portée de main. Aucun effort, aucun angle mort.</p>
+                <h3 data-i18n="s2-title">Chaque plante vient à vous</h3>
+                <p  data-i18n="s2-text">Faites tourner les bacs : chaque plante arrive à portée de main. Aucun effort, aucun angle mort.</p>
               </div>
             </div>
             <div class="step">
               <span class="step-num">03</span>
               <div>
-                <h3>Récoltez toute l'année</h3>
-                <p>Arrosez, cueillez, profitez — depuis votre fenêtre, à portée de main, chaque jour de l'année.</p>
+                <h3 data-i18n="s3-title">Récoltez toute l'année</h3>
+                <p  data-i18n="s3-text">Arrosez, cueillez, profitez — depuis votre fenêtre, à portée de main, chaque jour de l'année.</p>
               </div>
             </div>
           </div>
@@ -159,11 +159,11 @@
   <!-- Modèles -->
   <section class="models" id="modeles">
     <div class="container">
-      <h2>Choisissez votre MurMûr</h2>
-      <p class="section-sub">De quelques herbes fraîches à un potager complet — il y a un MurMûr pour chaque espace.</p>
+      <h2 data-i18n="models-title">Choisissez votre MurMûr</h2>
+      <p class="section-sub" data-i18n="models-sub">De quelques herbes fraîches à un potager complet — il y a un MurMûr pour chaque espace.</p>
       <div class="models-adapt-note">
         <span class="models-adapt-icon">📐</span>
-        <p>MurMûr s'adapte à <strong>tous les murs</strong> — chaque structure est configurable dans n'importe quelle proportion rectangulaire pour s'intégrer parfaitement à votre espace, quelle que soit sa surface.</p>
+        <p data-i18n="models-adapt">MurMûr s'adapte à <strong>tous les murs</strong> — chaque structure est configurable dans n'importe quelle proportion rectangulaire pour s'intégrer parfaitement à votre espace, quelle que soit sa surface.</p>
       </div>
       <div class="model-cards">
         <div class="model-card">
@@ -173,15 +173,15 @@
           <div class="model-body">
             <span class="model-badge">Starter</span>
             <h3>MurMûr Starter</h3>
-            <p>6 bacs — Pour commencer à cultiver chez vous dès aujourd'hui, sans prise de tête.</p>
+            <p data-i18n="starter-desc">6 bacs — Pour commencer à cultiver chez vous dès aujourd'hui, sans prise de tête.</p>
             <div class="model-colors">
-              <span class="color-swatch swatch-noir" data-color="Noir"></span>
+              <span class="color-swatch swatch-noir"  data-color="Noir"></span>
               <span class="color-swatch swatch-blanc color-active" data-color="Blanc"></span>
-              <span class="color-swatch swatch-gris" data-color="Gris"></span>
-              <span class="color-label">Blanc · Noir · Gris</span>
+              <span class="color-swatch swatch-gris"  data-color="Gris"></span>
+              <span class="color-label" data-i18n="colors-label">Blanc · Noir · Gris</span>
             </div>
             <p class="model-price">249 €</p>
-            <a href="acheter.html?model=starter" class="btn btn-primary btn-full">Acheter Starter</a>
+            <a href="acheter.html?model=starter" class="btn btn-primary btn-full" data-i18n="starter-btn">Acheter Starter</a>
           </div>
         </div>
         <div class="model-card model-featured">
@@ -189,17 +189,17 @@
             <img src="pictures/bb9df394-b32c-47ab-87c1-8003f329a160.png" alt="MurMûr Standard Blanc">
           </div>
           <div class="model-body">
-            <span class="model-badge badge-featured">Le plus populaire</span>
+            <span class="model-badge badge-featured" data-i18n="popular-badge">Le plus populaire</span>
             <h3>MurMûr Standard</h3>
-            <p>9 bacs — La vraie expérience potager, sans quitter votre appartement.</p>
+            <p data-i18n="standard-desc">9 bacs — La vraie expérience potager, sans quitter votre appartement.</p>
             <div class="model-colors">
-              <span class="color-swatch swatch-noir" data-color="Noir"></span>
+              <span class="color-swatch swatch-noir"  data-color="Noir"></span>
               <span class="color-swatch swatch-blanc color-active" data-color="Blanc"></span>
-              <span class="color-swatch swatch-gris" data-color="Gris"></span>
-              <span class="color-label">Blanc · Noir · Gris</span>
+              <span class="color-swatch swatch-gris"  data-color="Gris"></span>
+              <span class="color-label" data-i18n="colors-label">Blanc · Noir · Gris</span>
             </div>
             <p class="model-price">399 €</p>
-            <a href="acheter.html?model=standard" class="btn btn-primary btn-full">Acheter Standard</a>
+            <a href="acheter.html?model=standard" class="btn btn-primary btn-full" data-i18n="standard-btn">Acheter Standard</a>
           </div>
         </div>
         <div class="model-card">
@@ -209,15 +209,15 @@
           <div class="model-body">
             <span class="model-badge">Façade</span>
             <h3>MurMûr Façade</h3>
-            <p>12 bacs — Transformez votre façade entière en jardin productif et spectaculaire.</p>
+            <p data-i18n="facade-desc">12 bacs — Transformez votre façade entière en jardin productif et spectaculaire.</p>
             <div class="model-colors">
-              <span class="color-swatch swatch-noir" data-color="Noir"></span>
+              <span class="color-swatch swatch-noir"  data-color="Noir"></span>
               <span class="color-swatch swatch-blanc color-active" data-color="Blanc"></span>
-              <span class="color-swatch swatch-gris" data-color="Gris"></span>
-              <span class="color-label">Blanc · Noir · Gris</span>
+              <span class="color-swatch swatch-gris"  data-color="Gris"></span>
+              <span class="color-label" data-i18n="colors-label">Blanc · Noir · Gris</span>
             </div>
             <p class="model-price">699 €</p>
-            <a href="acheter.html?model=facade" class="btn btn-primary btn-full">Acheter Façade</a>
+            <a href="acheter.html?model=facade" class="btn btn-primary btn-full" data-i18n="facade-btn">Acheter Façade</a>
           </div>
         </div>
       </div>
@@ -228,10 +228,9 @@
   <section class="reviews">
     <div class="container">
       <div class="reviews-grid">
-
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Installé en 45 minutes chrono. Le mécanisme rotatif est bluffant — mes tomates cerises sont déjà en fleurs après 3 semaines."</p>
+          <p class="review-text" data-i18n="r1-text">"Installé en 45 minutes chrono. Le mécanisme rotatif est bluffant — mes tomates cerises sont déjà en fleurs après 3 semaines."</p>
           <div class="review-author">
             <div class="review-avatar">S</div>
             <div>
@@ -240,10 +239,9 @@
             </div>
           </div>
         </div>
-
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Enfin un potager qui ne ressemble pas à un potager. Sur mon balcon, il fait l'effet d'une sculpture. Les voisins m'ont tous demandé où je l'avais trouvé."</p>
+          <p class="review-text" data-i18n="r2-text">"Enfin un potager qui ne ressemble pas à un potager. Sur mon balcon, il fait l'effet d'une sculpture. Les voisins m'ont tous demandé où je l'avais trouvé."</p>
           <div class="review-author">
             <div class="review-avatar">L</div>
             <div>
@@ -252,10 +250,9 @@
             </div>
           </div>
         </div>
-
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <p class="review-text">"J'avais essayé deux autres systèmes de potager mural. MurMûr est dans une autre catégorie — la rotation change vraiment tout pour l'accès aux plantes."</p>
+          <p class="review-text" data-i18n="r3-text">"J'avais essayé deux autres systèmes de potager mural. MurMûr est dans une autre catégorie — la rotation change vraiment tout pour l'accès aux plantes."</p>
           <div class="review-author">
             <div class="review-avatar">A</div>
             <div>
@@ -264,10 +261,9 @@
             </div>
           </div>
         </div>
-
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Le modèle blanc dans notre cuisine d'été est parfait. Basilic, persil, menthe — on ne rachète plus d'herbes depuis 2 mois. Rentabilisé en un été."</p>
+          <p class="review-text" data-i18n="r4-text">"Le modèle blanc dans notre cuisine d'été est parfait. Basilic, persil, menthe — on ne rachète plus d'herbes depuis 2 mois. Rentabilisé en un été."</p>
           <div class="review-author">
             <div class="review-avatar">T</div>
             <div>
@@ -276,7 +272,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -285,42 +280,39 @@
   <section class="specs" id="specs">
     <div class="container">
       <div class="specs-inner">
-
         <div class="specs-text">
-          <span class="specs-tag">Fiche technique</span>
-          <h2>Un bac fait pour cultiver vraiment.</h2>
-          <p>Chaque bac MurMûr est dimensionné pour accueillir des cultures réelles — pas des herbes en pot de yaourt. Avec 20 litres de substrat par bac, tomates cerises, poivrons et fraises poussent sans compromis.</p>
-          <p>La structure entière est configurable : MurMûr s'adapte à n'importe quelle surface rectangulaire, en ajustant le nombre de bacs en largeur et en hauteur selon votre mur.</p>
+          <span class="specs-tag" data-i18n="specs-tag">Fiche technique</span>
+          <h2 data-i18n="specs-title">Un bac fait pour cultiver vraiment.</h2>
+          <p data-i18n="specs-p1">Chaque bac MurMûr est dimensionné pour accueillir des cultures réelles — pas des herbes en pot de yaourt. Avec 20 litres de substrat par bac, tomates cerises, poivrons et fraises poussent sans compromis.</p>
+          <p data-i18n="specs-p2">La structure entière est configurable : MurMûr s'adapte à n'importe quelle surface rectangulaire, en ajustant le nombre de bacs en largeur et en hauteur selon votre mur.</p>
         </div>
-
         <div class="specs-cards">
           <div class="spec-card spec-card-highlight">
             <div class="spec-value">50 × 20 × 20</div>
             <div class="spec-unit">cm</div>
-            <div class="spec-label">Dimensions du bac (L × l × H)</div>
+            <div class="spec-label" data-i18n="spec-l1">Dimensions du bac (L × l × H)</div>
           </div>
           <div class="spec-card">
             <div class="spec-value">20 L</div>
-            <div class="spec-label">Volume de substrat par bac</div>
+            <div class="spec-label" data-i18n="spec-l2">Volume de substrat par bac</div>
           </div>
           <div class="spec-card">
             <div class="spec-value">6 → 12</div>
-            <div class="spec-label">Nombre de bacs selon le modèle</div>
+            <div class="spec-label" data-i18n="spec-l3">Nombre de bacs selon le modèle</div>
           </div>
           <div class="spec-card">
             <div class="spec-value">Sur mesure</div>
-            <div class="spec-label">Configuration rectangulaire adaptable à votre mur</div>
+            <div class="spec-label" data-i18n="spec-l4">Configuration rectangulaire adaptable à votre mur</div>
           </div>
           <div class="spec-card">
             <div class="spec-value">< 1 h</div>
-            <div class="spec-label">Temps d'installation</div>
+            <div class="spec-label" data-i18n="spec-l5">Temps d'installation</div>
           </div>
           <div class="spec-card">
             <div class="spec-value">Extérieur</div>
-            <div class="spec-label">Façade, balcon, mur de terrasse</div>
+            <div class="spec-label" data-i18n="spec-l6">Façade, balcon, mur de terrasse</div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -328,27 +320,27 @@
   <!-- FAQ -->
   <section class="faq-section" id="faq">
     <div class="container">
-      <h2>Questions fréquentes</h2>
+      <h2 data-i18n="faq-title">Questions fréquentes</h2>
       <div class="faq-list">
         <div class="faq-item">
-          <button class="faq-question">Peut-on l'utiliser en appartement sans jardin ?</button>
-          <div class="faq-answer"><p>Absolument — c'est précisément pour ça que MurMûr a été conçu. Il se fixe sur toute surface extérieure : façade, balcon, mur de terrasse. Pas de jardin, pas de problème.</p></div>
+          <button class="faq-question" data-i18n="faq-q1">Peut-on l'utiliser en appartement sans jardin ?</button>
+          <div class="faq-answer"><p data-i18n="faq-a1">Absolument — c'est précisément pour ça que MurMûr a été conçu. Il se fixe sur toute surface extérieure : façade, balcon, mur de terrasse. Pas de jardin, pas de problème.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">L'installation est-elle vraiment simple ?</button>
-          <div class="faq-answer"><p>Oui. La fixation murale est intuitive et ne nécessite aucun outil spécial. La majorité de nos clients sont prêts à planter en moins d'une heure après réception.</p></div>
+          <button class="faq-question" data-i18n="faq-q2">L'installation est-elle vraiment simple ?</button>
+          <div class="faq-answer"><p data-i18n="faq-a2">Oui. La fixation murale est intuitive et ne nécessite aucun outil spécial. La majorité de nos clients sont prêts à planter en moins d'une heure après réception.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">Que peut-on cultiver dans MurMûr ?</button>
-          <div class="faq-answer"><p>Tout ce que vous aimez manger : herbes aromatiques (basilic, persil, coriandre), tomates cerises, fraises, poivrons, salade... MurMûr s'adapte à une grande diversité de cultures.</p></div>
+          <button class="faq-question" data-i18n="faq-q3">Que peut-on cultiver dans MurMûr ?</button>
+          <div class="faq-answer"><p data-i18n="faq-a3">Tout ce que vous aimez manger : herbes aromatiques (basilic, persil, coriandre), tomates cerises, fraises, poivrons, salade... MurMûr s'adapte à une grande diversité de cultures.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">Comment fonctionne le système rotatif ?</button>
-          <div class="faq-answer"><p>Le mécanisme de rotation permet à chaque bac de venir à portée de main depuis un point fixe. Fini de s'étirer ou de contourner le potager — tout est accessible en quelques secondes, sans effort.</p></div>
+          <button class="faq-question" data-i18n="faq-q4">Comment fonctionne le système rotatif ?</button>
+          <div class="faq-answer"><p data-i18n="faq-a4">Le mécanisme de rotation permet à chaque bac de venir à portée de main depuis un point fixe. Fini de s'étirer ou de contourner le potager — tout est accessible en quelques secondes, sans effort.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">Quel modèle choisir ?</button>
-          <div class="faq-answer"><p>Pour débuter ou tester : le Starter (6 bacs, 249€). Pour une vraie autonomie alimentaire en appartement : le Standard (9 bacs, 399€). Pour les passionnés et les grandes façades : le Façade (12 bacs, 699€).</p></div>
+          <button class="faq-question" data-i18n="faq-q5">Quel modèle choisir ?</button>
+          <div class="faq-answer"><p data-i18n="faq-a5">Pour débuter ou tester : le Starter (6 bacs, 249€). Pour une vraie autonomie alimentaire en appartement : le Standard (9 bacs, 399€). Pour les passionnés et les grandes façades : le Façade (12 bacs, 699€).</p></div>
         </div>
       </div>
     </div>
@@ -357,9 +349,9 @@
   <!-- CTA finale -->
   <section class="cta-finale">
     <div class="container cta-finale-inner">
-      <h2>Prêt à transformer votre façade ?</h2>
-      <p>Rejoignez les premiers à cultiver avec MurMûr. Choisissez votre modèle et commandez dès maintenant.</p>
-      <a href="acheter.html" class="btn btn-white btn-lg">Voir les modèles et acheter →</a>
+      <h2 data-i18n="cta-title">Prêt à transformer votre façade ?</h2>
+      <p  data-i18n="cta-sub">Rejoignez les premiers à cultiver avec MurMûr. Choisissez votre modèle et commandez dès maintenant.</p>
+      <a href="acheter.html" class="btn btn-white btn-lg" data-i18n="cta-btn">Voir les modèles et acheter →</a>
     </div>
   </section>
 
@@ -367,12 +359,13 @@
   <footer class="footer">
     <div class="container footer-inner">
       <img src="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/b6ee5876-8ae8-41de-8cf2-f3beba4ea158/IMG_3227.png?format=300w" alt="MurMûr" class="footer-logo">
-      <p>© 2026 MurMûr. Tous droits réservés.</p>
+      <p data-i18n="footer-rights">© 2026 MurMûr. Tous droits réservés.</p>
       <p><a href="mailto:murmur.alc.co@gmail.com">murmur.alc.co@gmail.com</a></p>
     </div>
   </footer>
 
   <script src="murmur.js"></script>
+  <script src="i18n.js"></script>
   <script>
     // Google Analytics — tracking des boutons
     document.querySelectorAll('a.btn').forEach(function(btn) {
@@ -384,7 +377,6 @@
         });
       });
     });
-
     document.querySelectorAll('button.faq-question').forEach(function(btn) {
       btn.addEventListener('click', function() {
         gtag('event', 'faq_ouvert', {
@@ -393,18 +385,6 @@
         });
       });
     });
-  </script>
-
-  <!-- Google Translate -->
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'fr',
-        includedLanguages: 'en,nl,de,es,it',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
-    }
   </script>
 </body>
 </html>
