@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MurMûr — Réservez votre place</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1E1BTGCK1T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1E1BTGCK1T');
+  </script>
   <meta name="description" content="MurMûr est en rupture de stock. Réservez votre place dans la liste d'attente et soyez prioritaire à la réouverture — sans paiement, sans engagement.">
 
   <!-- Open Graph -->
@@ -164,5 +173,36 @@
   </footer>
 
   <script src="acheter.js"></script>
+  <script>
+    // Google Analytics — tracking des boutons
+    document.querySelectorAll('a.btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'click', {
+          event_category: 'bouton',
+          event_label: btn.textContent.trim(),
+          link_url: btn.getAttribute('href')
+        });
+      });
+    });
+
+    document.querySelectorAll('button.selector-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'modele_selectionne', {
+          event_category: 'formulaire',
+          event_label: btn.textContent.trim()
+        });
+      });
+    });
+
+    var formBtn = document.getElementById('btn-reserve');
+    if (formBtn) {
+      formBtn.addEventListener('click', function() {
+        gtag('event', 'reservation_soumise', {
+          event_category: 'formulaire',
+          event_label: 'Réserver ma place'
+        });
+      });
+    }
+  </script>
 </body>
 </html>
