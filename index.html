@@ -48,6 +48,7 @@
       <li><a href="#faq">FAQ</a></li>
       <li><a href="histoire.html">Notre histoire</a></li>
     </ul>
+    <div id="google_translate_element"></div>
     <a href="acheter.html" class="btn btn-primary btn-sm">Acheter</a>
   </nav>
 
@@ -392,6 +393,18 @@
         });
       });
     });
+  </script>
+
+  <!-- Google Translate -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'fr',
+        includedLanguages: 'en,nl,de,es,it',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
   </script>
 </body>
 </html>
