@@ -84,7 +84,7 @@ const T = {
     'faq-q4': 'Comment fonctionne le système rotatif ?',
     'faq-a4': 'Le mécanisme de rotation permet à chaque bac de venir à portée de main depuis un point fixe. Fini de s\'étirer ou de contourner le potager — tout est accessible en quelques secondes, sans effort.',
     'faq-q5': 'Quel modèle choisir ?',
-    'faq-a5': 'Pour débuter ou tester : le Starter (6 bacs, 300€). Pour une vraie autonomie alimentaire en appartement : le Standard (9 bacs, 500€). Pour les passionnés et les grandes façades : le Façade (12 bacs, 700€).',
+    'faq-a5': 'Pour débuter ou tester : le Starter (6 bacs, 299€). Pour une vraie autonomie alimentaire en appartement : le Standard (9 bacs, 499€). Pour les passionnés et les grandes façades : le Façade (12 bacs, 699€).',
 
     /* ── index : CTA ── */
     'cta-title': 'Prêt à transformer votre façade ?',
@@ -242,7 +242,7 @@ const T = {
     'faq-q4': 'How does the rotating system work?',
     'faq-a4': 'The rotation mechanism brings each tray within reach from a fixed point. No more stretching or going around the garden — everything is accessible in seconds, effortlessly.',
     'faq-q5': 'Which model to choose?',
-    'faq-a5': 'To start or test: the Starter (6 trays, €300). For true food self-sufficiency in an apartment: the Standard (9 trays, €500). For enthusiasts and large walls: the Façade (12 trays, €700).',
+    'faq-a5': 'To start or test: the Starter (6 trays, €299). For true food self-sufficiency in an apartment: the Standard (9 trays, €499). For enthusiasts and large walls: the Façade (12 trays, €699).',
 
     /* ── index : CTA ── */
     'cta-title': 'Ready to transform your wall?',
@@ -286,9 +286,9 @@ const T = {
     'model-label':   'Selected model',
     'model-notice':  '⏳ Out of stock — next batch in production.',
     'sel-label':     'Change model:',
-    'sel-starter':   'Starter — €300',
-    'sel-standard':  'Standard — €500',
-    'sel-facade':    'Façade — €700',
+    'sel-starter':   'Starter — €299',
+    'sel-standard':  'Standard — €499',
+    'sel-facade':    'Façade — €699',
     'res-title':     'Reserve your spot.',
     'res-sub':       'Leave us your email and we\'ll notify you as a priority as soon as stock is available. No payment now — just your spot on the list.',
     'perk1':         '✓ Priority when we reopen',
