@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MurMûr — Notre histoire</title>
-
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8MD876YLJ8"></script>
   <script>
@@ -13,6 +9,10 @@
     gtag('js', new Date());
     gtag('config', 'G-8MD876YLJ8');
   </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MurMûr — Notre histoire</title>
   <meta name="description" content="MurMûr est né de la rencontre de deux bio-ingénieurs et d'un ingénieur civil passionnés par l'innovation. Découvrez l'histoire derrière le premier potager mural rotatif.">
 
   <!-- Open Graph -->
@@ -150,14 +150,28 @@
 
   <script src="i18n.js"></script>
   <script>
-    document.querySelectorAll('a.btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        gtag('event', 'click', {
-          event_category: 'bouton',
-          event_label: btn.textContent.trim(),
-          link_url: btn.getAttribute('href')
-        });
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // 8. Notre histoire — lien retour vers index (nav)
+      var histLink = document.querySelector('.nav-links a[href="histoire.html"]');
+      if (histLink) histLink.addEventListener('click', function () {
+        gtag('event', 'nav_histoire', { event_category: 'navigation', event_label: 'nav' });
       });
+
+      // 9 & 10. Scroll 50% et 100%
+      var scroll50 = false, scroll100 = false;
+      window.addEventListener('scroll', function () {
+        var pct = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+        if (!scroll50 && pct >= 50) {
+          scroll50 = true;
+          gtag('event', 'scroll_50', { event_category: 'engagement', event_label: '50%' });
+        }
+        if (!scroll100 && pct >= 99) {
+          scroll100 = true;
+          gtag('event', 'scroll_100', { event_category: 'engagement', event_label: '100%' });
+        }
+      });
+
     });
   </script>
 </body>

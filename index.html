@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MurMûr — Potager vertical rotatif</title>
-
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8MD876YLJ8"></script>
   <script>
@@ -13,6 +9,10 @@
     gtag('js', new Date());
     gtag('config', 'G-8MD876YLJ8');
   </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MurMûr — Potager vertical rotatif</title>
   <meta name="description" content="Le premier potager mural rotatif conçu pour l'appartement. Installez-le en une heure, récoltez dès le mois suivant — directement depuis votre balcon ou façade.">
 
   <!-- Open Graph -->
@@ -367,23 +367,59 @@
   <script src="murmur.js"></script>
   <script src="i18n.js"></script>
   <script>
-    // Google Analytics — tracking des boutons
-    document.querySelectorAll('a.btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        gtag('event', 'click', {
-          event_category: 'bouton',
-          event_label: btn.textContent.trim(),
-          link_url: btn.getAttribute('href')
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // 1. Acheter mon potager (hero)
+      var heroBuy = document.querySelector('.hero-ctas a[href="acheter.html"]');
+      if (heroBuy) heroBuy.addEventListener('click', function () {
+        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'hero' });
+      });
+
+      // 2. Acheter Starter
+      var starterBtn = document.querySelector('a[href="acheter.html?model=starter"]');
+      if (starterBtn) starterBtn.addEventListener('click', function () {
+        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'starter' });
+      });
+
+      // 3. Acheter Standard
+      var standardBtn = document.querySelector('a[href="acheter.html?model=standard"]');
+      if (standardBtn) standardBtn.addEventListener('click', function () {
+        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'standard' });
+      });
+
+      // 4. Acheter Façade
+      var facadeBtn = document.querySelector('a[href="acheter.html?model=facade"]');
+      if (facadeBtn) facadeBtn.addEventListener('click', function () {
+        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'facade' });
+      });
+
+      // 7. FAQ
+      document.querySelectorAll('.faq-question').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          gtag('event', 'faq_ouvert', { event_category: 'engagement', event_label: btn.textContent.trim() });
         });
       });
-    });
-    document.querySelectorAll('button.faq-question').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        gtag('event', 'faq_ouvert', {
-          event_category: 'faq',
-          event_label: btn.textContent.trim()
-        });
+
+      // 8. Notre histoire (nav)
+      var histLink = document.querySelector('.nav-links a[href="histoire.html"]');
+      if (histLink) histLink.addEventListener('click', function () {
+        gtag('event', 'nav_histoire', { event_category: 'navigation', event_label: 'nav' });
       });
+
+      // 9 & 10. Scroll 50% et 100%
+      var scroll50 = false, scroll100 = false;
+      window.addEventListener('scroll', function () {
+        var pct = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+        if (!scroll50 && pct >= 50) {
+          scroll50 = true;
+          gtag('event', 'scroll_50', { event_category: 'engagement', event_label: '50%' });
+        }
+        if (!scroll100 && pct >= 99) {
+          scroll100 = true;
+          gtag('event', 'scroll_100', { event_category: 'engagement', event_label: '100%' });
+        }
+      });
+
     });
   </script>
 </body>
