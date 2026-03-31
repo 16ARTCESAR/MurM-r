@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xn--murmr-hva.com/sitemap.xml
+Sitemap: https://murmûr.com/sitemap.xml
