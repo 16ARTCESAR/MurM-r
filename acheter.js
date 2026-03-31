@@ -28,13 +28,13 @@ const MODELS = {
   starter: {
     name: 'MurMûr Starter',
     desc: '6 bacs — Pour commencer à cultiver chez vous dès aujourd\'hui, sans prise de tête.',
-    price: '249 €',
+    price: '299 €',
     img: 'https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/86e8915d-5234-4e6c-8d2d-0164257caf0a/C2057623-31A8-496C-9D2B-FEC3C4EBA4BC.png',
   },
   standard: {
     name: 'MurMûr Standard',
     desc: '9 bacs — La vraie expérience potager, sans quitter votre appartement.',
-    price: '399 €',
+    price: '499 €',
     img: 'https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/0b062a38-324f-4e89-84af-35bf0128a1d4/70E2B5FA-E317-42F0-BB9D-864DC70AE071.png',
   },
   facade: {
