@@ -372,25 +372,25 @@
       // 1. Acheter mon potager (hero)
       var heroBuy = document.querySelector('.hero-ctas a[href="acheter.html"]');
       if (heroBuy) heroBuy.addEventListener('click', function () {
-        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'hero' });
+        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'hero', transport_type: 'beacon' });
       });
 
       // 2. Acheter Starter
       var starterBtn = document.querySelector('a[href="acheter.html?model=starter"]');
       if (starterBtn) starterBtn.addEventListener('click', function () {
-        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'starter' });
+        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'starter', transport_type: 'beacon' });
       });
 
       // 3. Acheter Standard
       var standardBtn = document.querySelector('a[href="acheter.html?model=standard"]');
       if (standardBtn) standardBtn.addEventListener('click', function () {
-        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'standard' });
+        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'standard', transport_type: 'beacon' });
       });
 
       // 4. Acheter Façade
       var facadeBtn = document.querySelector('a[href="acheter.html?model=facade"]');
       if (facadeBtn) facadeBtn.addEventListener('click', function () {
-        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'facade' });
+        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'facade', transport_type: 'beacon' });
       });
 
       // 7. FAQ
@@ -403,7 +403,7 @@
       // 8. Notre histoire (nav)
       var histLink = document.querySelector('.nav-links a[href="histoire.html"]');
       if (histLink) histLink.addEventListener('click', function () {
-        gtag('event', 'nav_histoire', { event_category: 'navigation', event_label: 'nav' });
+        gtag('event', 'nav_histoire', { event_category: 'navigation', event_label: 'nav', transport_type: 'beacon' });
       });
 
       // 9 & 10. Scroll 50% et 100%

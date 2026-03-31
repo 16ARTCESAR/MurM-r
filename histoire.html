@@ -155,7 +155,7 @@
       // 8. Notre histoire — lien retour vers index (nav)
       var histLink = document.querySelector('.nav-links a[href="histoire.html"]');
       if (histLink) histLink.addEventListener('click', function () {
-        gtag('event', 'nav_histoire', { event_category: 'navigation', event_label: 'nav' });
+        gtag('event', 'nav_histoire', { event_category: 'navigation', event_label: 'nav', transport_type: 'beacon' });
       });
 
       // 9 & 10. Scroll 50% et 100%
