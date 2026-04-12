@@ -664,9 +664,26 @@ function toggleLang() {
   applyLang(LANGS[(idx + 1) % LANGS.length]);
 }
 
+function toggleMenu() {
+  var links  = document.querySelector('.nav-links');
+  var burger = document.getElementById('nav-burger');
+  if (links)  links.classList.toggle('nav-open');
+  if (burger) burger.classList.toggle('open');
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   var saved = localStorage.getItem('lang') || 'fr';
   var btn = document.getElementById('lang-toggle');
   if (btn) btn.textContent = saved.toUpperCase();
   if (saved !== 'fr') applyLang(saved);
+
+  /* Ferme le menu burger au clic sur un lien */
+  document.querySelectorAll('.nav-links a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      var links  = document.querySelector('.nav-links');
+      var burger = document.getElementById('nav-burger');
+      if (links)  links.classList.remove('nav-open');
+      if (burger) burger.classList.remove('open');
+    });
+  });
 });
