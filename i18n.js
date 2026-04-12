@@ -206,6 +206,10 @@ const T = {
     'cta-seeds-title':     'Vous n\'avez pas encore de MurMûr ?',
     'cta-seeds-sub':       'Commandez votre potager rotatif et recevez les graines parfaites chaque saison dès le premier jour.',
     'cta-seeds-btn':       'Commander mon MurMûr →',
+    'seeds-spring-crops':  '<span>Basilic</span><span>Coriandre</span><span>Persil plat</span><span>Radis</span>',
+    'seeds-summer-crops':  '<span>Tomates cerises</span><span>Poivrons</span><span>Basilic thaï</span><span>Concombre nain</span>',
+    'seeds-autumn-crops':  '<span>Épinards</span><span>Roquette</span><span>Laitue romaine</span><span>Ciboulette</span>',
+    'seeds-winter-crops':  '<span>Mâche</span><span>Persil frisé</span><span>Cresson</span><span>Ail des ours</span>',
   },
 
   en: {
@@ -415,11 +419,231 @@ const T = {
     'cta-seeds-title':     'Don\'t have a MurMûr yet?',
     'cta-seeds-sub':       'Order your rotating garden and receive the perfect seeds every season from day one.',
     'cta-seeds-btn':       'Order my MurMûr →',
+    'seeds-spring-crops':  '<span>Basil</span><span>Coriander</span><span>Flat-leaf parsley</span><span>Radish</span>',
+    'seeds-summer-crops':  '<span>Cherry tomatoes</span><span>Bell peppers</span><span>Thai basil</span><span>Dwarf cucumber</span>',
+    'seeds-autumn-crops':  '<span>Spinach</span><span>Rocket</span><span>Romaine lettuce</span><span>Chives</span>',
+    'seeds-winter-crops':  '<span>Lamb\'s lettuce</span><span>Curly parsley</span><span>Watercress</span><span>Wild garlic</span>',
+  },
+
+  nl: {
+    /* ── Nav ── */
+    'nav-how':        'Werking',
+    'nav-models':     'Modellen',
+    'nav-faq':        'FAQ',
+    'nav-story':      'Ons verhaal',
+    'nav-buy':        'Kopen',
+    'nav-back':       '← Startpagina',
+    'nav-seeds':      'Zaden',
+
+    /* ── Footer ── */
+    'footer-rights':  '© 2026 MurMûr. Alle rechten voorbehouden.',
+
+    /* ── index : Hero ── */
+    'hero-tag':       'Roterend verticaal moestuin',
+    'hero-h1':        'Oogst thuis.<br><em>Zonder tuin,<br>zonder compromis.</em>',
+    'hero-sub':       'De eerste roterende wandmoestuin ontworpen voor het appartement. Installeer in een uur, oogst de volgende maand — rechtstreeks vanuit uw raam.',
+    'hero-cta-buy':   'Mijn moestuin kopen',
+    'hero-cta-models':'Bekijk de modellen',
+
+    /* ── index : Bénéfices ── */
+    'benefits-title': 'Wat MurMûr voor u verandert',
+    'b1-title': 'Gemaakt voor het appartement',
+    'b1-text':  'Balkon of gevel — MurMûr past zich aan uw ruimte aan, niet andersom. Geen tuin vereist.',
+    'b2-title': 'Nul moeite om te bereiken',
+    'b2-text':  'Elke plant komt naar u toe. Het roterende mechanisme elimineert dode hoeken en rekoefeningen.',
+    'b3-title': 'Meer oogsten, het hele jaar',
+    'b3-text':  'Elke plant staat goed belicht en goed bewaterd. Resultaat: regelmatige oogsten, zelfs in de winter.',
+    'b4-title': 'Een object om trots op te zijn',
+    'b4-text':  'MurMûr trekt net zoveel aandacht als de bakken — ontworpen om te verfraaien, niet alleen te kweken.',
+    'b5-title': 'Geïnstalleerd in minder dan een uur',
+    'b5-text':  'Intuïtieve bevestiging, geen speciaal gereedschap. Van uitpakken tot eerste plant in 60 minuten.',
+    'b6-title': 'Kweek wat u eet',
+    'b6-text':  'Kruiden, kerstomaatjes, aardbeien, paprika\'s — alles wat op uw bord terechtkomt.',
+
+    /* ── index : Comment ── */
+    'how-title':   'Zo eenvoudig als het maar kan.',
+    's1-title':    'Bevestig in een uur',
+    's1-text':     'Schroef MurMûr aan uw gevel of balkon. Eenvoudig, solide, discreet — geen technicus nodig.',
+    's2-title':    'Elke plant komt naar u toe',
+    's2-text':     'Draai de bakken: elke plant komt binnen handbereik. Geen moeite, geen dode hoeken.',
+    's3-title':    'Oogst het hele jaar',
+    's3-text':     'Water geven, plukken, genieten — vanuit uw raam, binnen handbereik, elke dag van het jaar.',
+
+    /* ── index : Modèles ── */
+    'models-title':  'Kies uw MurMûr',
+    'models-sub':    'Van een paar verse kruiden tot een complete moestuin — er is een MurMûr voor elke ruimte.',
+    'models-adapt':  'MurMûr past op <strong>elke muur</strong> — elke structuur is configureerbaar in elke rechthoekige verhouding om perfect in uw ruimte te passen, ongeacht het oppervlak.',
+    'starter-desc':  '6 bakken — Om vandaag thuis te beginnen met kweken, zonder gedoe.',
+    'colors-label':  'Wit · Zwart · Grijs',
+    'starter-btn':   'Starter kopen',
+    'popular-badge': 'Meest populair',
+    'standard-desc': '9 bakken — De echte moestuinervaring, zonder uw appartement te verlaten.',
+    'standard-btn':  'Standard kopen',
+    'facade-desc':   '12 bakken — Transformeer uw hele gevel in een productieve en spectaculaire tuin.',
+    'facade-btn':    'Façade kopen',
+
+    /* ── index : Avis ── */
+    'r1-text': '"In 45 minuten geïnstalleerd. Het roterende mechanisme is verbluffend — mijn kerstomaatjes staan al in bloei na 3 weken."',
+    'r2-text': '"Eindelijk een moestuin die er niet uitziet als een moestuin. Op mijn balkon ziet hij eruit als een sculptuur. Alle buren vroegen waar ik hem had gevonden."',
+    'r3-text': '"Ik had twee andere wandmoestuinsystemen geprobeerd. MurMûr is in een andere categorie — de rotatie verandert echt alles voor de toegang tot planten."',
+    'r4-text': '"Het witte model in onze buitenkeuken is perfect. Basilicum, peterselie, munt — we kopen geen kruiden meer al 2 maanden. Terugverdiend in één zomer."',
+
+    /* ── index : Specs ── */
+    'specs-tag':     'Technische specificaties',
+    'specs-title':   'Een bak gemaakt voor écht kweken.',
+    'specs-p1':      'Elke MurMûr-bak is gedimensioneerd voor echte teelten — niet kruiden in een yoghurtpot. Met 20 liter substraat per bak groeien kerstomaatjes, paprika\'s en aardbeien zonder compromis.',
+    'specs-p2':      'De volledige structuur is configureerbaar: MurMûr past zich aan elk rechthoekig oppervlak aan, door het aantal bakken in breedte en hoogte aan te passen aan uw muur.',
+    'spec-l1':       'Bakafmetingen (L × B × H)',
+    'spec-l2':       'Substraatvolume per bak',
+    'spec-l3':       'Aantal bakken per model',
+    'spec-l4':       'Rechthoekige configuratie aanpasbaar aan uw muur',
+    'spec-l5':       'Installatietijd',
+    'spec-l6':       'Gevel, balkon, terras',
+
+    /* ── index : FAQ ── */
+    'faq-title': 'Veelgestelde vragen',
+    'faq-q1': 'Kan het gebruikt worden in een appartement zonder tuin?',
+    'faq-a1': 'Absoluut — dat is precies waarvoor MurMûr is ontworpen. Het wordt bevestigd op elk buitenoppervlak: gevel, balkon, terrasmuur. Geen tuin, geen probleem.',
+    'faq-q2': 'Is de installatie echt eenvoudig?',
+    'faq-a2': 'Ja. De wandbevestiging is intuïtief en vereist geen speciaal gereedschap. De meeste klanten zijn klaar om te planten binnen een uur na ontvangst.',
+    'faq-q3': 'Wat kun je kweken in MurMûr?',
+    'faq-a3': 'Alles wat u lekker vindt: aromatische kruiden (basilicum, peterselie, koriander), kerstomaatjes, aardbeien, paprika\'s, sla... MurMûr past zich aan een grote verscheidenheid aan teelten aan.',
+    'faq-q4': 'Hoe werkt het roterende systeem?',
+    'faq-a4': 'Het rotatiemechanisme brengt elke bak binnen handbereik vanuit een vast punt. Geen strekken of om de moestuin lopen meer — alles is in seconden bereikbaar, moeiteloos.',
+    'faq-q5': 'Welk model kiezen?',
+    'faq-a5': 'Om te beginnen of te testen: de Starter (6 bakken, 299€). Voor echte voedselautonomie in een appartement: de Standard (9 bakken, 499€). Voor liefhebbers en grote gevels: de Façade (12 bakken, 699€).',
+
+    /* ── index : CTA ── */
+    'cta-title': 'Klaar om uw gevel te transformeren?',
+    'cta-sub':   'Sluit u aan bij de eersten die met MurMûr kweken. Kies uw model en bestel nu.',
+    'cta-btn':   'Bekijk modellen en koop →',
+
+    /* ── histoire ── */
+    'hist-tag':   'Wie zijn we',
+    'hist-h1':    '3 ingenieurs.<br><em>Één doel.</em>',
+    'hist-sub':   'MurMûr is niet geboren in een designbureau. Het is geboren uit een gedeelde frustratie: waarom is het zo moeilijk om thuis te kweken als je geen tuin hebt?',
+    'story-title':'Het idee ontstond op een Brussels balkon.',
+    'story-p1':   'Het begon met een eenvoudig probleem: hoe kweek je kerstomaatjes op een balkon van 4m² zonder jezelf te verdraaien bij elke bewatering? De wandmoestuinen op de markt waren slechts rijen potten bevestigd aan een rooster — mooi, maar echt onbruikbaar.',
+    'story-p2':   'Drie jaar prototypes, tests en iteraties later was MurMûr geboren. Een roterend systeem dat elke plant binnen handbereik brengt, vanuit een vast punt. Eenvoudig in gebruik, nauwkeurig in engineering.',
+    'story-p3':   'Wat ons onderscheidt van onze concurrenten is niet de esthetiek — het is de overtuiging dat <strong>technologie achter de ervaring moet verdwijnen.</strong> Een bak draaien moet zo natuurlijk aanvoelen als een kraan opendraaien.',
+    'team-title': 'Het team',
+    'team-sub':   '3 ingenieurs, één doel — stedelijk kweken toegankelijk maken voor iedereen.',
+    'luka-role':  'Bio-ingenieur · Medeoprichter',
+    'luka-text':  'Hij is degene die ervoor zorgt dat de planten echt groeien. Hij koos de substraten, testte de teelten en bepaalde wat werkt in een MurMûr-bak — niet alleen op papier, maar op een echt balkon.',
+    'cesar-role': 'Bio-ingenieur · Medeoprichter',
+    'cesar-text': 'Zijn beginvraag: hoe kweek je het hele jaar groenten onder een Belgische hemel? Hij werkte aan belichting, bewatering en het aanpassen van teelten aan de vier seizoenen.',
+    'ant-role':   'Civiel ingenieur · Medeoprichter',
+    'ant-text':   'Hij ontwierp het rotatiemechanisme — het hart van het product. Zijn doel was eenvoudig: iets wat iedereen in een uur kan installeren en 15 jaar buiten meegaat.',
+    'why-title':  'Waarom MurMûr anders is.',
+    'why1-title': 'Het enige roterende systeem op de markt',
+    'why1-text':  'Al onze concurrenten bieden statische groene muren. Mooi om naar te kijken, moeilijk te onderhouden. MurMûr is het enige systeem waarbij elke bak naar u toekomt — niet andersom. Een detail dat dagelijks alles verandert.',
+    'why2-title': 'Ontworpen voor echte oogsten',
+    'why2-text':  '20 liter substraat per bak, niet 2 liter in een decoratieve pot. Onze bakken zijn gedimensioneerd door bio-ingenieurs voor tomaten, paprika\'s en aardbeien — niet alleen basilicum in een yoghurtpot.',
+    'why3-title': 'Gemaakt om te duren',
+    'why3-text':  'Ontworpen door een civiel ingenieur met een eenvoudige beperking: 15 jaar Belgisch weer weerstaan. Materialen behandeld tegen vorst, UV en corrosie. MurMûr is geen seizoensgadget.',
+    'why4-title': 'Aanpasbaar aan elke muur',
+    'why4-text':  'In tegenstelling tot standaardsystemen die hun formaat opleggen, is MurMûr op maat configureerbaar — in breedte en hoogte — om op elk rechthoekig oppervlak te passen.',
+    'cta-hist-title': 'Klaar om thuis te kweken?',
+    'cta-hist-sub':   'Sluit u aan bij de eersten die MurMûr ontvangen. Reserveer nu uw plek op de wachtlijst.',
+    'cta-hist-btn':   'Mijn plek reserveren →',
+
+    /* ── acheter ── */
+    'oos-badge':     'Uitverkocht',
+    'oos-h1':        'Dit model is momenteel<br><em>uitverkocht.</em>',
+    'oos-sub':       'MurMûr heeft een vraag gezien die we niet hadden verwacht — onze eerste voorraad is uitverkocht. Het goede nieuws: een nieuwe productie is onderweg. Reserveer nu uw plek voor prioriteit bij heropening.',
+    'oos-overlay':   'Uitverkocht',
+    'model-label':   'Geselecteerd model',
+    'model-notice':  '⏳ Uitverkocht — volgende levering in productie.',
+    'sel-label':     'Model wijzigen:',
+    'sel-starter':   'Starter — 299 €',
+    'sel-standard':  'Standard — 499 €',
+    'sel-facade':    'Façade — 699 €',
+    'res-title':     'Reserveer uw plek.',
+    'res-sub':       'Laat uw e-mail achter en we laten u als eerste weten wanneer de voorraad beschikbaar is. Geen betaling nu — alleen uw plek op de lijst.',
+    'perk1':         '✓ Prioriteit bij heropening',
+    'perk2':         '✓ Lanceringsprijs gegarandeerd',
+    'perk3':         '✓ Geen verplichting, vrij te annuleren',
+    'perk4':         '✓ E-mailmelding bij beschikbaarheid',
+    'form-title':    'Prioritaire melding ontvangen',
+    'form-btn':      'Mijn plek reserveren — per e-mail gecontacteerd worden',
+    'form-note':     'Geen verplichting. Geen betaling. We schrijven u zodra het beschikbaar is.',
+    'form-sending':  'Verzenden…',
+    'form-error':    'Fout — probeer opnieuw',
+    'form-neterror': 'Netwerkfout — probeer opnieuw',
+    'waitlist-text': 'mensen al op de wachtlijst',
+    'hab-label':     'Type woning',
+    'hab-appt':      'Appartement',
+    'hab-maison':    'Huis',
+    'hab-autre':     'Andere',
+    'confirm-title': 'Uw plek is gereserveerd!',
+    'confirm-text':  'Bedankt — u behoort tot de eersten die gecontacteerd worden zodra de voorraad beschikbaar is. We schrijven u op het opgegeven adres.',
+    'confirm-btn':   'Terug naar de site',
+    'ph-prenom':     'Voornaam',
+    'ph-nom':        'Naam',
+    'ph-email':      'Uw e-mail',
+    'ph-message':    'Een opmerking of vraag? (optioneel)',
+
+    /* ── zaden ── */
+    'seeds-tag':           'Seizoensabonnement',
+    'seeds-h1':            'Zaden ontworpen<br><em>voor uw MurMûr.</em>',
+    'seeds-sub':           'Geselecteerd door onze bio-ingenieurs, aangepast aan onze bakafmetingen en per seizoen geleverd — voor succesvolle oogsten, het hele jaar.',
+    'seeds-gift-badge':    '🎁 Eerste doos gratis voor nieuwe abonnees',
+    'seeds-cta-hero':      'Abonneren — 69 €/jaar',
+    'seeds-why-title':     'Waarom onze zaden anders zijn',
+    'seeds-arg1-title':    'Aangepast aan onze bakken',
+    'seeds-arg1-text':     'Elk ras wordt geselecteerd op de exacte afmetingen van onze bakken: worteldiepte, scheutshoogte, substraatbehoefte. Geen onaangename verrassingen, geen mislukte teelten.',
+    'seeds-arg2-title':    'Per seizoen geleverd',
+    'seeds-arg2-text':     '4 dozen per jaar, één per seizoen. Elke doos bevat de rassen die het beste bij het moment passen — zodat u kweekt wat echt goed gedijt in die periode van het jaar.',
+    'seeds-seasons-title': 'Wat u ontvangt',
+    'seeds-seasons-sub':   'Elk seizoen een gecureerde doos zaden geselecteerd door onze bio-ingenieurs, klaar om in uw MurMûr te planten.',
+    'seeds-spring':        'Lente',
+    'seeds-summer':        'Zomer',
+    'seeds-autumn':        'Herfst',
+    'seeds-winter':        'Winter',
+    'seeds-how-title':     'Hoe het werkt',
+    'seeds-step1-title':   'Ik schrijf me in',
+    'seeds-step1-text':    'Ik vul het onderstaande formulier in. Het MurMûr-team bevestigt mijn abonnement per e-mail binnen 24u.',
+    'seeds-step2-title':   'Ik ontvang mijn doos',
+    'seeds-step2-text':    'Elk kwartaal arriveert een doos geselecteerde zaden bij me thuis met een inbegrepen plantgids.',
+    'seeds-step3-title':   'Ik plant en oogst',
+    'seeds-step3-text':    'Ik volg de bijgevoegde gids en geniet van regelmatige oogsten, aangepast aan elk seizoen en mijn bakken.',
+    'seeds-offer-tag':     'Jaarabonnement',
+    'seeds-offer-title':   'MurMûr Zadenabonnement',
+    'seeds-offer-sub':     'Alles wat nodig is om het hele jaar te kweken in uw MurMûr, zonder op zoek te gaan naar de juiste rassen.',
+    'seeds-period':        '/ jaar',
+    'seeds-gift-callout':  '🎁 Eerste doos gratis bij inschrijving',
+    'seeds-feat1':         '✓ 4 dozen per jaar (één per seizoen)',
+    'seeds-feat2':         '✓ Rassen geselecteerd voor onze bakken',
+    'seeds-feat3':         '✓ Plantgids inbegrepen in elke doos',
+    'seeds-feat4':         '✓ Thuisbezorging',
+    'seeds-feat5':         '✓ Op elk moment opzegbaar',
+    'seeds-form-title':    'Nu abonneren',
+    'seeds-model-label':   'Uw MurMûr-model',
+    'seeds-model-starter': 'Starter (6 bakken)',
+    'seeds-model-standard':'Standard (9 bakken)',
+    'seeds-model-facade':  'Façade (12 bakken)',
+    'seeds-model-none':    'Ik heb nog geen MurMûr',
+    'seeds-gift-note':     '🎁 Uw eerste doos wordt gratis verstuurd bij inschrijving',
+    'seeds-form-btn':      'Abonneren — 69 €/jaar',
+    'seeds-form-note':     'Eerste doos gratis. Op elk moment opzegbaar. We contacteren u om uw abonnement te bevestigen.',
+    'seeds-confirm-title': 'Abonnement geregistreerd!',
+    'seeds-confirm-text':  'Bedankt — we contacteren u binnen 48u om uw abonnement te bevestigen en uw gratis eerste doos te verzenden.',
+    'seeds-confirm-btn':   'Terug naar de site',
+    'cta-seeds-title':     'Heeft u nog geen MurMûr?',
+    'cta-seeds-sub':       'Bestel uw roterende moestuin en ontvang elk seizoen de perfecte zaden vanaf dag één.',
+    'cta-seeds-btn':       'Mijn MurMûr bestellen →',
+    'seeds-spring-crops':  '<span>Basilicum</span><span>Koriander</span><span>Platte peterselie</span><span>Radijs</span>',
+    'seeds-summer-crops':  '<span>Kerstomaatjes</span><span>Paprika\'s</span><span>Thaise basilicum</span><span>Dwergkomkommer</span>',
+    'seeds-autumn-crops':  '<span>Spinazie</span><span>Rucola</span><span>Romeinse sla</span><span>Bieslook</span>',
+    'seeds-winter-crops':  '<span>Veldsla</span><span>Krulpeterselie</span><span>Waterkers</span><span>Daslook</span>',
   }
 };
 
 /* ─── Engine ─── */
+var LANGS = ['fr', 'en', 'nl'];
+
 function applyLang(lang) {
+  if (!T[lang]) lang = 'fr';
   document.querySelectorAll('[data-i18n]').forEach(function(el) {
     var key = el.dataset.i18n;
     if (T[lang][key] !== undefined) el.innerHTML = T[lang][key];
@@ -431,17 +655,18 @@ function applyLang(lang) {
   localStorage.setItem('lang', lang);
   document.documentElement.lang = lang;
   var btn = document.getElementById('lang-toggle');
-  if (btn) btn.textContent = lang === 'fr' ? 'EN' : 'FR';
+  if (btn) btn.textContent = lang.toUpperCase();
 }
 
 function toggleLang() {
   var current = localStorage.getItem('lang') || 'fr';
-  applyLang(current === 'fr' ? 'en' : 'fr');
+  var idx = LANGS.indexOf(current);
+  applyLang(LANGS[(idx + 1) % LANGS.length]);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   var saved = localStorage.getItem('lang') || 'fr';
   var btn = document.getElementById('lang-toggle');
-  if (btn) btn.textContent = saved === 'fr' ? 'EN' : 'FR';
+  if (btn) btn.textContent = saved.toUpperCase();
   if (saved !== 'fr') applyLang(saved);
 });
