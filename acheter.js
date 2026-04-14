@@ -76,12 +76,15 @@ function setModel(key) {
 }
 
 function updateUpsellTotal() {
-  const checked = document.getElementById('seeds-addon-toggle').checked;
+  const seedsChecked   = document.getElementById('seeds-addon-toggle').checked;
+  const installChecked = document.getElementById('install-addon-toggle').checked;
   const basePrice = MODELS[currentModelKey].priceVal;
-  const total = basePrice + (checked ? 69 : 0);
+  const total = basePrice + (seedsChecked ? 69 : 0) + (installChecked ? 100 : 0);
   document.getElementById('upsell-total').textContent = total + ' €';
-  document.getElementById('upsell-seeds-card').classList.toggle('selected', checked);
-  document.getElementById('form-seeds-addon').value = checked ? 'oui' : 'non';
+  document.getElementById('upsell-seeds-card').classList.toggle('selected', seedsChecked);
+  document.getElementById('upsell-install-card').classList.toggle('selected', installChecked);
+  document.getElementById('form-seeds-addon').value   = seedsChecked   ? 'oui' : 'non';
+  document.getElementById('form-install-addon').value = installChecked ? 'oui' : 'non';
 }
 
 function proceedToCheckout() {
@@ -91,8 +94,9 @@ function proceedToCheckout() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function skipSeeds() {
-  document.getElementById('seeds-addon-toggle').checked = false;
+function skipAddons() {
+  document.getElementById('seeds-addon-toggle').checked   = false;
+  document.getElementById('install-addon-toggle').checked = false;
   updateUpsellTotal();
   proceedToCheckout();
 }
@@ -112,6 +116,13 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('upsell-seeds-card').addEventListener('click', e => {
     if (!e.target.closest('.seeds-toggle-label')) {
       document.getElementById('seeds-addon-toggle').click();
+    }
+  });
+
+  // Install card click → toggle checkbox
+  document.getElementById('upsell-install-card').addEventListener('click', e => {
+    if (!e.target.closest('.seeds-toggle-label')) {
+      document.getElementById('install-addon-toggle').click();
     }
   });
 
