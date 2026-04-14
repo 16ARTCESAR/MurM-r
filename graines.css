@@ -61,6 +61,59 @@
   font-weight: 500;
 }
 
+/* --- Unboxing --- */
+.seeds-unbox {
+  padding: 5rem 0;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+.seeds-unbox-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.seeds-unbox-photo img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+  display: block;
+}
+.seeds-unbox-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.seeds-unbox-text h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--text);
+}
+.seeds-unbox-text p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+.seeds-unbox-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+}
+.seeds-unbox-pills span {
+  background: var(--green-light);
+  color: var(--green);
+  border: 1px solid rgba(45,90,39,0.15);
+  border-radius: 100px;
+  padding: 0.45rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
 /* --- Pourquoi nos graines --- */
 .seeds-why {
   padding: 5rem 0;
@@ -445,6 +498,7 @@
 }
 
 @media (max-width: 768px) {
+  .seeds-unbox-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .seeds-why-grid    { grid-template-columns: 1fr; }
   .seeds-steps-grid  { grid-template-columns: 1fr; }
   .seeds-offer-inner { grid-template-columns: 1fr; gap: 2.5rem; }

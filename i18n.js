@@ -216,6 +216,9 @@ const T = {
     /* ── graines ── */
     'nav-seeds':           'Graines',
     'seeds-tag':           'Abonnement saisonnier',
+    'seeds-unbox-tag':     'La boîte du printemps 🌸',
+    'seeds-unbox-title':   '4 variétés.<br>Une saison.',
+    'seeds-unbox-sub':     'Chaque boîte arrive avec les graines sélectionnées pour la saison : des variétés testées pour nos bacs, livrées au bon moment pour planter sans se tromper.',
     'seeds-h1':            'Des graines pensées<br><em>pour votre MurMûr.</em>',
     'seeds-sub':           'Sélectionnées par nos bio-ingénieurs, adaptées aux dimensions de nos bacs et livrées par saison — pour des récoltes réussies, toute l\'année.',
     'seeds-gift-badge':    '🎁 Première boîte offerte pour les nouveaux abonnés',
@@ -499,6 +502,9 @@ const T = {
     /* ── seeds ── */
     'nav-seeds':           'Seeds',
     'seeds-tag':           'Seasonal subscription',
+    'seeds-unbox-tag':     'The spring box 🌸',
+    'seeds-unbox-title':   '4 varieties.<br>One season.',
+    'seeds-unbox-sub':     'Each box arrives with seeds selected for the season — varieties tested for our trays, delivered at the right time so you never plant wrong.',
     'seeds-h1':            'Seeds designed<br><em>for your MurMûr.</em>',
     'seeds-sub':           'Selected by our bio-engineers, adapted to our tray dimensions and delivered by season — for successful harvests, all year long.',
     'seeds-gift-badge':    '🎁 First box free for new subscribers',
@@ -782,6 +788,9 @@ const T = {
 
     /* ── zaden ── */
     'seeds-tag':           'Seizoensabonnement',
+    'seeds-unbox-tag':     'De lentedoos 🌸',
+    'seeds-unbox-title':   '4 variëteiten.<br>Eén seizoen.',
+    'seeds-unbox-sub':     'Elke doos bevat de zaden geselecteerd voor het seizoen — variëteiten getest voor onze bakken, op het juiste moment geleverd om nooit te vergissen.',
     'seeds-h1':            'Zaden ontworpen<br><em>voor uw MurMûr.</em>',
     'seeds-sub':           'Geselecteerd door onze bio-ingenieurs, aangepast aan onze bakafmetingen en per seizoen geleverd — voor succesvolle oogsten, het hele jaar.',
     'seeds-gift-badge':    '🎁 Eerste doos gratis voor nieuwe abonnees',
