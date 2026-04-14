@@ -1,0 +1,101 @@
+/* === FAQ PAGE === */
+
+.nav-active { color: var(--text) !important; font-weight: 500; }
+
+/* Hero */
+.faq-hero {
+  padding: 5rem 0 4rem;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+.faq-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--green-mid);
+  background: var(--green-light);
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+}
+.faq-hero h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  max-width: 700px;
+}
+.faq-hero-sub {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 580px;
+  line-height: 1.75;
+}
+
+/* Sections */
+.faq-page-section {
+  padding: 4rem 0;
+  background: var(--white);
+}
+.faq-page-section.faq-section-alt {
+  background: var(--bg);
+}
+.faq-section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+/* Lien vers guide installation */
+.faq-inst-link {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+/* CTA finale */
+.cta-finale {
+  background: var(--green);
+  padding: 4rem 2rem;
+}
+.cta-finale-inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.cta-finale h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  color: white;
+}
+.cta-finale p {
+  color: rgba(255,255,255,0.82);
+  font-size: 1rem;
+  max-width: 500px;
+  line-height: 1.7;
+}
+.btn-white {
+  background: white;
+  color: var(--green);
+  border-color: white;
+  font-weight: 500;
+}
+.btn-white:hover {
+  background: var(--green-light);
+  border-color: var(--green-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  .faq-hero { padding: 3rem 0 2.5rem; }
+  .faq-page-section { padding: 3rem 0; }
+}

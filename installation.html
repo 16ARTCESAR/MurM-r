@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "w4bcssxmow");
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8MD876YLJ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8MD876YLJ8');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MurMûr — Guide d'installation</title>
+  <meta name="description" content="Installez votre MurMûr en moins d'une heure. Tout le matériel est fourni — rail, bacs, manivelle, visserie. Il vous faut juste une perceuse.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="MurMûr — Guide d'installation">
+  <meta property="og:description" content="Installez votre MurMûr en moins d'une heure. Compatible tous murs. Tout le matériel fourni.">
+  <meta property="og:image"       content="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/c76d33d8-d088-4fd1-be5b-008bac863631/CC3C6756-73B8-4911-8CC1-447880434E48.png">
+  <meta property="og:url"         content="https://murmûr.com/installation">
+  <meta property="og:locale"      content="fr_BE">
+
+  <link rel="icon" href="pictures/04ac0f89-5815-4c5e-92b9-a5c439f3a001.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="murmur.css">
+  <link rel="stylesheet" href="installation.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/b6ee5876-8ae8-41de-8cf2-f3beba4ea158/IMG_3227.png?format=300w" alt="MurMûr">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#comment"  data-i18n="nav-how">Fonctionnement</a></li>
+      <li><a href="installation.html" class="nav-active" data-i18n="nav-installation">Installation</a></li>
+      <li><a href="faq.html"            data-i18n="nav-faq">FAQ</a></li>
+      <li><a href="histoire.html"       data-i18n="nav-story">Notre histoire</a></li>
+      <li><a href="graines.html"        data-i18n="nav-seeds">Graines</a></li>
+    </ul>
+    <button class="lang-toggle" id="lang-toggle" onclick="toggleLang()">EN</button>
+    <a href="index.html#modeles" class="btn btn-primary btn-sm" data-i18n="nav-buy">Découvrir nos offres</a>
+    <button class="nav-burger" id="nav-burger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="inst-hero">
+    <div class="container">
+      <span class="inst-tag" data-i18n="inst-tag">Guide d'installation</span>
+      <h1 data-i18n="inst-h1">Installé en<br><em>moins d'une heure.</em></h1>
+      <p class="inst-sub" data-i18n="inst-sub">Tout le matériel est inclus. Il vous faut un mur, une perceuse — et c'est tout.</p>
+    </div>
+  </section>
+
+  <!-- Ce qui est fourni -->
+  <section class="inst-box-section">
+    <div class="container">
+      <div class="inst-box-inner">
+        <div class="inst-box-left">
+          <h2 data-i18n="inst-box-title">Ce qui est dans la boîte</h2>
+          <p class="inst-box-sub" data-i18n="inst-box-sub">Vous n'avez rien à acheter en plus.</p>
+          <ul class="inst-items-list">
+            <li data-i18n="inst-item1">✓ Rail de fixation</li>
+            <li data-i18n="inst-item2">✓ Bacs de culture</li>
+            <li data-i18n="inst-item3">✓ Manivelle de rotation</li>
+            <li data-i18n="inst-item4">✓ Visserie et chevilles</li>
+          </ul>
+        </div>
+        <div class="inst-box-right">
+          <h3 data-i18n="inst-tools-title">Ce qu'il vous faut en plus</h3>
+          <div class="inst-tools-list">
+            <div class="inst-tool-item">
+              <div class="inst-tool-icon">🔧</div>
+              <span data-i18n="inst-tool1">Une perceuse</span>
+            </div>
+            <div class="inst-tool-item">
+              <div class="inst-tool-icon">📐</div>
+              <span data-i18n="inst-tool2">Un niveau à bulle</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Étapes -->
+  <section class="inst-steps-section">
+    <div class="container">
+      <h2 data-i18n="inst-steps-title">En 4 étapes.</h2>
+      <div class="inst-steps-grid">
+        <div class="inst-step">
+          <div class="inst-step-num" data-i18n="inst-s1-num">01</div>
+          <h3 data-i18n="inst-s1-title">Choisissez votre emplacement</h3>
+          <p data-i18n="inst-s1-text">Repérez un mur extérieur vertical. MurMûr est compatible avec tous les types de surfaces : béton, brique, bois, enduit. Pour une installation en hauteur, prévoyez une échelle ou faites-vous aider.</p>
+        </div>
+        <div class="inst-step">
+          <div class="inst-step-num" data-i18n="inst-s2-num">02</div>
+          <h3 data-i18n="inst-s2-title">Percez et fixez le rail</h3>
+          <p data-i18n="inst-s2-text">À l'aide du gabarit fourni, percez les trous de fixation. Insérez les chevilles, vissez le rail et vérifiez l'horizontalité au niveau à bulle.</p>
+        </div>
+        <div class="inst-step">
+          <div class="inst-step-num" data-i18n="inst-s3-num">03</div>
+          <h3 data-i18n="inst-s3-title">Installez les bacs</h3>
+          <p data-i18n="inst-s3-text">Glissez chaque bac sur le rail de gauche à droite. Connectez la manivelle de rotation : votre MurMûr est opérationnel.</p>
+        </div>
+        <div class="inst-step">
+          <div class="inst-step-num" data-i18n="inst-s4-num">04</div>
+          <h3 data-i18n="inst-s4-title">Plantez et récoltez</h3>
+          <p data-i18n="inst-s4-text">Remplissez les bacs de substrat, installez vos plantes et effectuez votre premier tour de manivelle. Bienvenue dans votre potager rotatif.</p>
+        </div>
+      </div>
+
+      <!-- Avertissement hauteur -->
+      <div class="inst-warn-box">
+        <p data-i18n="inst-warn">💡 Pour les installations en hauteur (au-dessus de 1,5 m), nous recommandons d'être deux personnes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specs rapides -->
+  <section class="inst-specs-section">
+    <div class="container">
+      <h2 data-i18n="inst-specs-title">En un coup d'œil</h2>
+      <div class="inst-specs-grid">
+        <div class="inst-spec-item">
+          <span class="inst-spec-label" data-i18n="inst-spec1-label">Poids à vide</span>
+          <span class="inst-spec-val" data-i18n="inst-spec1-val">Max 20 kg</span>
+        </div>
+        <div class="inst-spec-item">
+          <span class="inst-spec-label" data-i18n="inst-spec2-label">Compatibilité</span>
+          <span class="inst-spec-val" data-i18n="inst-spec2-val">Tous types de murs</span>
+        </div>
+        <div class="inst-spec-item">
+          <span class="inst-spec-label" data-i18n="inst-spec3-label">Outillage requis</span>
+          <span class="inst-spec-val" data-i18n="inst-spec3-val">Perceuse + niveau</span>
+        </div>
+        <div class="inst-spec-item">
+          <span class="inst-spec-label" data-i18n="inst-spec4-label">Durée</span>
+          <span class="inst-spec-val" data-i18n="inst-spec4-val">&lt; 1 heure</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-finale">
+    <div class="container cta-finale-inner">
+      <h2 data-i18n="inst-cta-title">Des questions ?</h2>
+      <p  data-i18n="inst-cta-sub">Consultez notre FAQ complète ou contactez-nous directement.</p>
+      <div class="inst-cta-btns">
+        <a href="faq.html"            class="btn btn-white btn-lg" data-i18n="inst-cta-btn1">Voir la FAQ →</a>
+        <a href="index.html#modeles"  class="btn btn-outline-white btn-lg" data-i18n="inst-cta-btn2">Découvrir les modèles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/b6ee5876-8ae8-41de-8cf2-f3beba4ea158/IMG_3227.png?format=300w" alt="MurMûr" class="footer-logo">
+      <p data-i18n="footer-rights">© 2026 MurMûr. Tous droits réservés.</p>
+      <p><a href="mailto:murmur.alc.co@gmail.com">murmur.alc.co@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var scroll50 = false, scroll100 = false;
+      window.addEventListener('scroll', function () {
+        var pct = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+        if (!scroll50 && pct >= 50) { scroll50 = true; gtag('event', 'scroll_50', { event_category: 'engagement', event_label: '50%' }); }
+        if (!scroll100 && pct >= 99) { scroll100 = true; gtag('event', 'scroll_100', { event_category: 'engagement', event_label: '100%' }); }
+      });
+    });
+  </script>
+</body>
+</html>
