@@ -29,26 +29,31 @@ const MODELS = {
     name: 'MurMûr Starter',
     desc: '6 bacs — Pour commencer à cultiver chez vous dès aujourd\'hui, sans prise de tête.',
     price: '299 €',
+    priceVal: 299,
     img: 'https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/86e8915d-5234-4e6c-8d2d-0164257caf0a/C2057623-31A8-496C-9D2B-FEC3C4EBA4BC.png',
   },
   standard: {
     name: 'MurMûr Standard',
     desc: '9 bacs — La vraie expérience potager, sans quitter votre appartement.',
     price: '499 €',
+    priceVal: 499,
     img: 'https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/0b062a38-324f-4e89-84af-35bf0128a1d4/70E2B5FA-E317-42F0-BB9D-864DC70AE071.png',
   },
   facade: {
     name: 'MurMûr Façade',
     desc: '12 bacs — Transformez votre façade entière en jardin productif et spectaculaire.',
     price: '699 €',
+    priceVal: 699,
     img: 'https://images.squarespace-cdn.com/content/v1/698b23e59cb1c46717336fae/30a3a9f9-6990-43a6-9b99-25c97955107a/2B83458D-D9B2-400A-A91A-4F7DCDA638EA.png',
   },
 };
 
 const VALID_KEYS = ['starter', 'standard', 'facade'];
+let currentModelKey = 'standard';
 
 function setModel(key) {
   if (!VALID_KEYS.includes(key)) key = 'standard';
+  currentModelKey = key;
   const m = MODELS[key];
 
   document.getElementById('model-img').src = m.img;
@@ -59,10 +64,37 @@ function setModel(key) {
   document.getElementById('form-modele').value = key;
   document.getElementById('form-modele-select').value = key;
 
+  // Update upsell summary
+  document.getElementById('upsell-model-name').textContent = m.name;
+  document.getElementById('upsell-model-price').textContent = m.price;
+  updateUpsellTotal();
+
   // Sync selector buttons
   document.querySelectorAll('.selector-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.model === key);
   });
+}
+
+function updateUpsellTotal() {
+  const checked = document.getElementById('seeds-addon-toggle').checked;
+  const basePrice = MODELS[currentModelKey].priceVal;
+  const total = basePrice + (checked ? 69 : 0);
+  document.getElementById('upsell-total').textContent = total + ' €';
+  document.getElementById('upsell-seeds-card').classList.toggle('selected', checked);
+  document.getElementById('form-seeds-addon').value = checked ? 'oui' : 'non';
+}
+
+function proceedToCheckout() {
+  updateUpsellTotal();
+  document.getElementById('step-upsell').style.display = 'none';
+  document.getElementById('step-oos').style.display = '';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function skipSeeds() {
+  document.getElementById('seeds-addon-toggle').checked = false;
+  updateUpsellTotal();
+  proceedToCheckout();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -75,6 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Waitlist counter
   const countEl = document.getElementById('waitlist-count');
   if (countEl) animateCount(countEl, getWaitlistCount());
+
+  // Seeds card click → toggle checkbox
+  document.getElementById('upsell-seeds-card').addEventListener('click', e => {
+    if (!e.target.closest('.seeds-toggle-label')) {
+      document.getElementById('seeds-addon-toggle').click();
+    }
+  });
 
   // Selector buttons
   document.querySelectorAll('.selector-btn').forEach(btn => {

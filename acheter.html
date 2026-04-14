@@ -66,6 +66,65 @@
     </button>
   </nav>
 
+  <!-- Step 1: Upsell -->
+  <div id="step-upsell">
+    <section class="upsell-section">
+      <div class="container">
+        <div class="upsell-header">
+          <div class="upsell-check-icon">✓</div>
+          <h1 data-i18n="upsell-title">Excellent choix !</h1>
+          <p class="upsell-sub" data-i18n="upsell-sub">Avant de continuer, voici une offre exclusive pour compléter votre MurMûr.</p>
+        </div>
+        <div class="upsell-inner">
+          <!-- Sélection modèle -->
+          <div class="upsell-model-card">
+            <span class="upsell-your-label" data-i18n="upsell-your-model">Votre sélection</span>
+            <div class="upsell-model-row">
+              <span class="upsell-model-name" id="upsell-model-name">MurMûr Standard</span>
+              <span class="upsell-model-price" id="upsell-model-price">499 €</span>
+            </div>
+          </div>
+
+          <!-- Addon graines -->
+          <div class="upsell-seeds-card" id="upsell-seeds-card">
+            <div class="upsell-seeds-top">
+              <div class="upsell-seeds-info">
+                <div class="upsell-exclusive-badge" data-i18n="upsell-exclusive">Offre exclusive</div>
+                <h3 data-i18n="upsell-seeds-title">Abonnement Graines MurMûr</h3>
+                <p data-i18n="upsell-seeds-desc">4 boîtes par an · Graines adaptées à vos bacs · <strong>Première boîte offerte</strong></p>
+                <p class="upsell-seeds-price-tag">
+                  <span data-i18n="upsell-seeds-price">69 € / an</span>
+                  <span class="upsell-first-free" data-i18n="upsell-first-free">🎁 Première boîte offerte</span>
+                </p>
+              </div>
+              <label class="seeds-toggle-label">
+                <input type="checkbox" id="seeds-addon-toggle" onchange="updateUpsellTotal()">
+                <span class="seeds-toggle-track"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Total + CTA -->
+          <div class="upsell-cta-block">
+            <div class="upsell-total-line">
+              <span data-i18n="upsell-total-label">Total estimé :</span>
+              <strong id="upsell-total">499 €</strong>
+            </div>
+            <button class="btn btn-primary btn-full btn-lg" onclick="proceedToCheckout()" data-i18n="upsell-cta">
+              Finaliser ma réservation →
+            </button>
+            <button class="upsell-skip-btn" onclick="skipSeeds()" data-i18n="upsell-skip">
+              Continuer sans l'abonnement
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Step 2: Out of stock + liste d'attente -->
+  <div id="step-oos" style="display:none">
+
   <!-- Out of stock -->
   <section class="oos-hero">
     <div class="oos-badge">
@@ -132,6 +191,7 @@
           </div>
           <input type="email" name="email"   data-i18n-ph="ph-email"  placeholder="Votre email" required maxlength="120">
           <input type="hidden" name="modele" id="form-modele" value="standard">
+          <input type="hidden" name="abonnement_graines" id="form-seeds-addon" value="non">
           <div class="form-row">
             <select name="habitation">
               <option value=""           data-i18n="hab-label">Type d'habitation</option>
@@ -158,6 +218,8 @@
       </div>
     </div>
   </section>
+
+  </div><!-- /step-oos -->
 
   <!-- Confirmation -->
   <div class="confirm-overlay" id="confirm-overlay">

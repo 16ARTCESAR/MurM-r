@@ -1,3 +1,266 @@
+/* === UPSELL STEP === */
+
+.upsell-section {
+  background: var(--bg);
+  padding: 5rem 2rem 4rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.upsell-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.upsell-check-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: var(--green-light);
+  color: var(--green);
+  border-radius: 50%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.upsell-header h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.upsell-sub {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.upsell-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Model summary card */
+.upsell-model-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.upsell-your-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.upsell-model-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.upsell-model-name {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.upsell-model-price {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--green);
+}
+
+/* Seeds addon card */
+.upsell-seeds-card {
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.upsell-seeds-card.selected {
+  border-color: var(--green);
+  box-shadow: 0 0 0 4px rgba(45,90,39,0.08);
+}
+
+.upsell-seeds-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.upsell-seeds-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.upsell-exclusive-badge {
+  display: inline-block;
+  background: var(--green-light);
+  color: var(--green);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 100px;
+  width: fit-content;
+}
+
+.upsell-seeds-info h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.upsell-seeds-info p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.upsell-seeds-price-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.upsell-seeds-price-tag span:first-child {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.upsell-first-free {
+  font-size: 0.8rem !important;
+  color: var(--green) !important;
+  font-weight: 500 !important;
+}
+
+/* Toggle switch */
+.seeds-toggle-label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.seeds-toggle-label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.seeds-toggle-track {
+  display: block;
+  width: 50px;
+  height: 26px;
+  background: var(--border);
+  border-radius: 100px;
+  transition: background 0.2s;
+  position: relative;
+}
+
+.seeds-toggle-track::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.seeds-toggle-label input:checked + .seeds-toggle-track {
+  background: var(--green);
+}
+
+.seeds-toggle-label input:checked + .seeds-toggle-track::after {
+  transform: translateX(24px);
+}
+
+/* Total + CTA block */
+.upsell-cta-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.upsell-total-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.upsell-total-line strong {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.upsell-skip-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-family: var(--font-body);
+  cursor: pointer;
+  text-align: center;
+  padding: 0.5rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s;
+}
+
+.upsell-skip-btn:hover {
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .upsell-section { padding: 4rem 1.25rem 3rem; }
+  .upsell-seeds-top { flex-wrap: wrap; }
+}
+
 /* === ACHETER PAGE === */
 
 /* Out of stock hero */

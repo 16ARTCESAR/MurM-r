@@ -5,7 +5,7 @@ const T = {
     'nav-models':     'Modèles',
     'nav-faq':        'FAQ',
     'nav-story':      'Notre histoire',
-    'nav-buy':        'Acheter',
+    'nav-buy':        'Découvrir nos offres',
     'nav-back':       '← Accueil',
 
     /* ── Footer ── */
@@ -210,6 +210,19 @@ const T = {
     'seeds-summer-crops':  '<span>Tomates cerises</span><span>Poivrons</span><span>Basilic thaï</span><span>Concombre nain</span>',
     'seeds-autumn-crops':  '<span>Épinards</span><span>Roquette</span><span>Laitue romaine</span><span>Ciboulette</span>',
     'seeds-winter-crops':  '<span>Mâche</span><span>Persil frisé</span><span>Cresson</span><span>Ail des ours</span>',
+
+    /* ── acheter : upsell ── */
+    'upsell-title':       'Excellent choix !',
+    'upsell-sub':         'Avant de continuer, voici une offre exclusive pour compléter votre MurMûr.',
+    'upsell-your-model':  'Votre sélection',
+    'upsell-exclusive':   'Offre exclusive',
+    'upsell-seeds-title': 'Abonnement Graines MurMûr',
+    'upsell-seeds-desc':  '4 boîtes par an · Graines adaptées à vos bacs · <strong>Première boîte offerte</strong>',
+    'upsell-seeds-price': '69 € / an',
+    'upsell-first-free':  '🎁 Première boîte offerte',
+    'upsell-total-label': 'Total estimé :',
+    'upsell-cta':         'Finaliser ma réservation →',
+    'upsell-skip':        'Continuer sans l\'abonnement',
   },
 
   en: {
@@ -218,7 +231,7 @@ const T = {
     'nav-models':     'Models',
     'nav-faq':        'FAQ',
     'nav-story':      'Our story',
-    'nav-buy':        'Buy',
+    'nav-buy':        'Discover our offers',
     'nav-back':       '← Home',
 
     /* ── Footer ── */
@@ -423,6 +436,19 @@ const T = {
     'seeds-summer-crops':  '<span>Cherry tomatoes</span><span>Bell peppers</span><span>Thai basil</span><span>Dwarf cucumber</span>',
     'seeds-autumn-crops':  '<span>Spinach</span><span>Rocket</span><span>Romaine lettuce</span><span>Chives</span>',
     'seeds-winter-crops':  '<span>Lamb\'s lettuce</span><span>Curly parsley</span><span>Watercress</span><span>Wild garlic</span>',
+
+    /* ── acheter : upsell ── */
+    'upsell-title':       'Great choice!',
+    'upsell-sub':         'Before continuing, here\'s an exclusive offer to complete your MurMûr.',
+    'upsell-your-model':  'Your selection',
+    'upsell-exclusive':   'Exclusive offer',
+    'upsell-seeds-title': 'MurMûr Seeds Subscription',
+    'upsell-seeds-desc':  '4 boxes per year · Seeds adapted to your trays · <strong>First box free</strong>',
+    'upsell-seeds-price': '€69 / year',
+    'upsell-first-free':  '🎁 First box free',
+    'upsell-total-label': 'Estimated total:',
+    'upsell-cta':         'Finalise my reservation →',
+    'upsell-skip':        'Continue without subscription',
   },
 
   nl: {
@@ -431,7 +457,7 @@ const T = {
     'nav-models':     'Modellen',
     'nav-faq':        'FAQ',
     'nav-story':      'Ons verhaal',
-    'nav-buy':        'Kopen',
+    'nav-buy':        'Ontdek onze aanbiedingen',
     'nav-back':       '← Startpagina',
     'nav-seeds':      'Zaden',
 
@@ -636,6 +662,19 @@ const T = {
     'seeds-summer-crops':  '<span>Kerstomaatjes</span><span>Paprika\'s</span><span>Thaise basilicum</span><span>Dwergkomkommer</span>',
     'seeds-autumn-crops':  '<span>Spinazie</span><span>Rucola</span><span>Romeinse sla</span><span>Bieslook</span>',
     'seeds-winter-crops':  '<span>Veldsla</span><span>Krulpeterselie</span><span>Waterkers</span><span>Daslook</span>',
+
+    /* ── acheter : upsell ── */
+    'upsell-title':       'Uitstekende keuze!',
+    'upsell-sub':         'Voordat u verdergaat, een exclusief aanbod om uw MurMûr te completeren.',
+    'upsell-your-model':  'Uw selectie',
+    'upsell-exclusive':   'Exclusief aanbod',
+    'upsell-seeds-title': 'MurMûr Zadenabonnement',
+    'upsell-seeds-desc':  '4 dozen per jaar · Zaden aangepast aan uw bakken · <strong>Eerste doos gratis</strong>',
+    'upsell-seeds-price': '€69 / jaar',
+    'upsell-first-free':  '🎁 Eerste doos gratis',
+    'upsell-total-label': 'Geschat totaal:',
+    'upsell-cta':         'Mijn reservering afronden →',
+    'upsell-skip':        'Doorgaan zonder abonnement',
   }
 };
 
