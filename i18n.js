@@ -294,7 +294,7 @@ const T = {
     'inst-serv2':             '✓ Vérification niveau et fixation',
     'inst-serv3':             '✓ Démonstration de la manivelle',
     'inst-service-fixed':     'tarif fixe · tous modèles',
-    'inst-service-cta':       'Ajouter lors de la commande →',
+    'inst-service-cta':       'Choisir mon modèle →',
   },
 
   en: {
@@ -592,7 +592,7 @@ const T = {
     'inst-serv2':             '✓ Level and fixing check',
     'inst-serv3':             '✓ Crank demonstration',
     'inst-service-fixed':     'flat rate · all models',
-    'inst-service-cta':       'Add when ordering →',
+    'inst-service-cta':       'Choose my model →',
   },
 
   nl: {
@@ -890,7 +890,7 @@ const T = {
     'inst-serv2':             '✓ Niveau- en bevestigingscontrole',
     'inst-serv3':             '✓ Demonstratie van de hendel',
     'inst-service-fixed':     'vaste prijs · alle modellen',
-    'inst-service-cta':       'Toevoegen bij bestelling →',
+    'inst-service-cta':       'Mijn model kiezen →',
   }
 };
 
