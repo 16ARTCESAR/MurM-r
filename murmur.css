@@ -746,6 +746,24 @@ ul  { list-style: none; }
 .footer-inner p { font-size: 0.84rem; }
 .footer-inner a { color: rgba(255,255,255,0.65); text-decoration: underline; }
 .footer-inner a:hover { color: white; }
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-link:hover { color: white; }
+.footer-link svg { flex-shrink: 0; }
 
 /* === CTA FINALE === */
 .cta-finale {
