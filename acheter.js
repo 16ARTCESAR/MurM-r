@@ -1,8 +1,32 @@
 // ============================================================
-// LISTE D'ATTENTE — mettre à jour ce chiffre manuellement
-// en consultant vos soumissions sur formspree.io/forms
+// LISTE D'ATTENTE — compteur live via Firebase Realtime Database
+// URL de la base : https://murmurprojectt-default-rtdb.europe-west1.firebasedatabase.app/
 // ============================================================
-const WL_COUNT = 11;
+const FB_URL = 'https://murmurprojectt-default-rtdb.europe-west1.firebasedatabase.app/waitlist/count.json';
+
+async function getWaitlistCount() {
+  try {
+    const res = await fetch(FB_URL);
+    if (!res.ok) return 0;
+    const val = await res.json();
+    return typeof val === 'number' ? val : 0;
+  } catch {
+    return 0;
+  }
+}
+
+async function incrementWaitlistCount() {
+  try {
+    await fetch(
+      'https://murmurprojectt-default-rtdb.europe-west1.firebasedatabase.app/waitlist.json',
+      {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ count: { '.sv': { increment: 1 } } })
+      }
+    );
+  } catch { /* silent fail */ }
+}
 
 function animateCount(el, target) {
   const start = Math.max(1, target - 5);
@@ -102,9 +126,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const modelParam = VALID_KEYS.includes(rawParam) ? rawParam : 'standard';
   setModel(modelParam);
 
-  // Waitlist counter
+  // Waitlist counter — live depuis Firebase
   const countEl = document.getElementById('waitlist-count');
-  if (countEl) animateCount(countEl, WL_COUNT);
+  if (countEl) {
+    getWaitlistCount().then(n => animateCount(countEl, Math.max(1, n)));
+  }
 
   // Seeds card click → toggle checkbox
   document.getElementById('upsell-seeds-card').addEventListener('click', e => {
@@ -147,6 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       if (res.ok) {
         form.reset();
+        incrementWaitlistCount();
         document.getElementById('confirm-overlay').classList.add('show');
       } else {
         btn.textContent = 'Erreur — réessayez';
