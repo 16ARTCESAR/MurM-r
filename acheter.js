@@ -1,14 +1,8 @@
-const WL_KEY  = 'murmur_waitlist_count';
-const WL_BASE = 11;
-
-function getWaitlistCount() {
-  const stored = parseInt(localStorage.getItem(WL_KEY), 10);
-  if (!stored || stored < WL_BASE) {
-    localStorage.setItem(WL_KEY, WL_BASE);
-    return WL_BASE;
-  }
-  return stored;
-}
+// ============================================================
+// LISTE D'ATTENTE — mettre à jour ce chiffre manuellement
+// en consultant vos soumissions sur formspree.io/forms
+// ============================================================
+const WL_COUNT = 11;
 
 function animateCount(el, target) {
   const start = Math.max(1, target - 5);
@@ -110,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Waitlist counter
   const countEl = document.getElementById('waitlist-count');
-  if (countEl) animateCount(countEl, getWaitlistCount());
+  if (countEl) animateCount(countEl, WL_COUNT);
 
   // Seeds card click → toggle checkbox
   document.getElementById('upsell-seeds-card').addEventListener('click', e => {
@@ -153,10 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       if (res.ok) {
         form.reset();
-        // Incrémenter le compteur de file d'attente
-        const newCount = getWaitlistCount() + 1;
-        localStorage.setItem(WL_KEY, newCount);
-        if (countEl) countEl.textContent = newCount;
         document.getElementById('confirm-overlay').classList.add('show');
       } else {
         btn.textContent = 'Erreur — réessayez';
