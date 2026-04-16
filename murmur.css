@@ -882,10 +882,12 @@ ul  { list-style: none; }
 
   .hero {
     grid-template-columns: 1fr;
+    height: auto;
     min-height: auto;
+    max-height: none;
   }
   .hero-text { padding: 3rem 1.5rem 2rem; }
-  .hero-visual { height: 340px; }
+  .hero-visual { height: 280px; }
 
   .description { padding: 3rem 1.5rem; }
 

@@ -72,8 +72,7 @@
       <h1 data-i18n="hero-h1">Récoltez chez vous.<br><em>Sans jardin,<br>sans compromis.</em></h1>
       <p class="hero-sub" data-i18n="hero-sub">Le premier potager mural rotatif conçu pour l'appartement. Installez-le en une heure, récoltez dès le mois suivant — directement depuis votre fenêtre.</p>
       <div class="hero-ctas">
-        <a href="#modeles" class="btn btn-primary" data-i18n="hero-cta-buy" onclick="gtag('event','clic_acheter',{event_category:'achat',event_label:'hero',transport_type:'beacon'})">Acheter mon potager</a>
-        <a href="#modeles"     class="btn btn-outline"  data-i18n="hero-cta-models">Voir les modèles</a>
+        <a href="#modeles" class="btn btn-primary" data-i18n="hero-cta-models" onclick="gtag('event','clic_acheter',{event_category:'achat',event_label:'hero',transport_type:'beacon'})">Voir les modèles</a>
       </div>
     </div>
     <div class="hero-visual">
@@ -362,10 +361,10 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
 
-      // 1. Acheter mon potager (hero)
-      var heroBuy = document.querySelector('.hero-ctas a[href="acheter.html"]');
+      // 1. Voir les modèles (hero)
+      var heroBuy = document.querySelector('.hero-ctas a[href="#modeles"]');
       if (heroBuy) heroBuy.addEventListener('click', function () {
-        gtag('event', 'clic_acheter', { event_category: 'achat', event_label: 'hero', transport_type: 'beacon' });
+        gtag('event', 'clic_voir_modeles', { event_category: 'navigation', event_label: 'hero', transport_type: 'beacon' });
       });
 
       // 2. Acheter Starter
