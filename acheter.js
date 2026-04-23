@@ -73,7 +73,7 @@ function updateUpsellTotal() {
   const seedsChecked   = document.getElementById('seeds-addon-toggle').checked;
   const installChecked = document.getElementById('install-addon-toggle').checked;
   const basePrice = MODELS[currentModelKey].priceVal;
-  const total = basePrice + (seedsChecked ? 69 : 0) + (installChecked ? 100 : 0);
+  const total = basePrice + (seedsChecked ? 49 : 0) + (installChecked ? 100 : 0);
   document.getElementById('upsell-total').textContent = total + ' €';
   document.getElementById('upsell-seeds-card').classList.toggle('selected', seedsChecked);
   document.getElementById('upsell-install-card').classList.toggle('selected', installChecked);
