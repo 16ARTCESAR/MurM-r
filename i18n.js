@@ -217,7 +217,7 @@ const T = {
     'nav-seeds':           'Graines',
     'seeds-tag':           'Abonnement saisonnier',
     'seeds-unbox-tag':     'La boîte du printemps 🌸',
-    'seeds-unbox-title':   '4 variétés.<br>Une saison.',
+    'seeds-unbox-title':   '6 variétés.<br>Une saison.',
     'seeds-unbox-sub':     'Chaque boîte arrive avec les graines sélectionnées pour la saison : des variétés testées pour nos bacs, livrées au bon moment pour planter sans se tromper.',
     'seeds-h1':            'Des graines pensées<br><em>pour votre MurMûr.</em>',
     'seeds-sub':           'Sélectionnées par nos bio-ingénieurs, adaptées aux dimensions de nos bacs et livrées par saison — pour des récoltes réussies, toute l\'année.',
@@ -266,9 +266,9 @@ const T = {
     'cta-seeds-title':     'Vous n\'avez pas encore de MurMûr ?',
     'cta-seeds-sub':       'Commandez votre potager rotatif et recevez les graines parfaites chaque saison dès le premier jour.',
     'cta-seeds-btn':       'Commander mon MurMûr →',
-    'seeds-spring-crops':  '<span>Basilic</span><span>Coriandre</span><span>Persil plat</span><span>Radis</span>',
+    'seeds-spring-crops':  '<span>Cresson aliénois</span><span>Mesclun asiatique</span><span>Cerfeuil</span><span>Radis</span><span>Persil</span><span>Coriandre</span>',
     'seeds-summer-crops':  '<span>Tomates cerises</span><span>Poivrons</span><span>Basilic thaï</span><span>Concombre nain</span>',
-    'seeds-autumn-crops':  '<span>Épinards</span><span>Roquette</span><span>Laitue romaine</span><span>Ciboulette</span>',
+    'seeds-autumn-crops':  '<span>Épinards</span><span>Mâche</span><span>Roquette</span><span>Ciboulette</span><span>Cerfeuil</span>',
     'seeds-winter-crops':  '<span>Mâche</span><span>Persil frisé</span><span>Cresson</span><span>Ail des ours</span>',
 
     /* ── acheter : upsell ── */
@@ -515,7 +515,7 @@ const T = {
     'nav-seeds':           'Seeds',
     'seeds-tag':           'Seasonal subscription',
     'seeds-unbox-tag':     'The spring box 🌸',
-    'seeds-unbox-title':   '4 varieties.<br>One season.',
+    'seeds-unbox-title':   '6 varieties.<br>One season.',
     'seeds-unbox-sub':     'Each box arrives with seeds selected for the season — varieties tested for our trays, delivered at the right time so you never plant wrong.',
     'seeds-h1':            'Seeds designed<br><em>for your MurMûr.</em>',
     'seeds-sub':           'Selected by our bio-engineers, adapted to our tray dimensions and delivered by season — for successful harvests, all year long.',
@@ -564,9 +564,9 @@ const T = {
     'cta-seeds-title':     'Don\'t have a MurMûr yet?',
     'cta-seeds-sub':       'Order your rotating garden and receive the perfect seeds every season from day one.',
     'cta-seeds-btn':       'Order my MurMûr →',
-    'seeds-spring-crops':  '<span>Basil</span><span>Coriander</span><span>Flat-leaf parsley</span><span>Radish</span>',
+    'seeds-spring-crops':  '<span>Garden cress</span><span>Asian mesclun</span><span>Chervil</span><span>Radish</span><span>Parsley</span><span>Coriander</span>',
     'seeds-summer-crops':  '<span>Cherry tomatoes</span><span>Bell peppers</span><span>Thai basil</span><span>Dwarf cucumber</span>',
-    'seeds-autumn-crops':  '<span>Spinach</span><span>Rocket</span><span>Romaine lettuce</span><span>Chives</span>',
+    'seeds-autumn-crops':  '<span>Spinach</span><span>Lamb\'s lettuce</span><span>Rocket</span><span>Chives</span><span>Chervil</span>',
     'seeds-winter-crops':  '<span>Lamb\'s lettuce</span><span>Curly parsley</span><span>Watercress</span><span>Wild garlic</span>',
 
     /* ── acheter : upsell ── */
@@ -813,7 +813,7 @@ const T = {
     /* ── zaden ── */
     'seeds-tag':           'Seizoensabonnement',
     'seeds-unbox-tag':     'De lentedoos 🌸',
-    'seeds-unbox-title':   '4 variëteiten.<br>Eén seizoen.',
+    'seeds-unbox-title':   '6 variëteiten.<br>Eén seizoen.',
     'seeds-unbox-sub':     'Elke doos bevat de zaden geselecteerd voor het seizoen — variëteiten getest voor onze bakken, op het juiste moment geleverd om nooit te vergissen.',
     'seeds-h1':            'Zaden ontworpen<br><em>voor uw MurMûr.</em>',
     'seeds-sub':           'Geselecteerd door onze bio-ingenieurs, aangepast aan onze bakafmetingen en per seizoen geleverd — voor succesvolle oogsten, het hele jaar.',
@@ -862,9 +862,9 @@ const T = {
     'cta-seeds-title':     'Heeft u nog geen MurMûr?',
     'cta-seeds-sub':       'Bestel uw roterende moestuin en ontvang elk seizoen de perfecte zaden vanaf dag één.',
     'cta-seeds-btn':       'Mijn MurMûr bestellen →',
-    'seeds-spring-crops':  '<span>Basilicum</span><span>Koriander</span><span>Platte peterselie</span><span>Radijs</span>',
+    'seeds-spring-crops':  '<span>Tuinkers</span><span>Aziatische mesclun</span><span>Kervel</span><span>Radijs</span><span>Peterselie</span><span>Koriander</span>',
     'seeds-summer-crops':  '<span>Kerstomaatjes</span><span>Paprika\'s</span><span>Thaise basilicum</span><span>Dwergkomkommer</span>',
-    'seeds-autumn-crops':  '<span>Spinazie</span><span>Rucola</span><span>Romeinse sla</span><span>Bieslook</span>',
+    'seeds-autumn-crops':  '<span>Spinazie</span><span>Veldsla</span><span>Rucola</span><span>Bieslook</span><span>Kervel</span>',
     'seeds-winter-crops':  '<span>Veldsla</span><span>Krulpeterselie</span><span>Waterkers</span><span>Daslook</span>',
 
     /* ── acheter : upsell ── */
