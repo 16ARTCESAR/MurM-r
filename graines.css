@@ -189,10 +189,15 @@
 }
 
 .seasons-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 1.25rem;
   margin-top: 3rem;
+  flex-wrap: wrap;
+}
+.seasons-grid .season-card {
+  flex: 0 1 calc(33.333% - 1rem);
+  min-width: 200px;
 }
 
 .season-card {
